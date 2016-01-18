@@ -37,6 +37,8 @@ return [
     'useMemcached' => true,
 ];
 " > /vagrant/config/cache-local.php
+chown vagrant:vagrant /vagrant/config/*-local.php
+
 
 # restart nginx
 service nginx restart
@@ -46,16 +48,22 @@ npm install -g gulp
 ln -s /usr/bin/nodejs /usr/local/bin/node
 
 echo "==== Installing composer ===="
-cd /root
-curl -sS https://getcomposer.org/installer | /usr/local/php7/bin/php
-mv composer.phar /usr/local/bin/composer
-chmod +x /usr/local/bin/composer
+
+if [ -f $ENV_DIR/auth.json ]
+then
+    mkdir -p /home/vagrant/.composer
+    cp $ENV_DIR/auth.json /home/vagrant/.composer/
+    chown -R vagrant:vagrant /home/vagrant/.composer/
+fi
+
+composer self-update
+su vagrant -c 'composer global require fxp/composer-asset-plugin ~1.1.1 --prefer-dist'
 
 echo "==== Installing base dotplant3 ===="
 
 cd /vagrant
-composer install --prefer-dist
+su vagrant -c 'composer install --prefer-dist'
 # run
-./yii migrate --interactive=0
+su vagrant -c './yii migrate --interactive=0'
 
 echo "==== DONE ===="
