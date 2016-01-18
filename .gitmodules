@@ -1,0 +1,3 @@
+[submodule "assets/frontend-monster"]
+	path = assets/frontend-monster
+	url = git@gitlab.external.asgard.zone:bethrezen/frontend-monster-nwe.git

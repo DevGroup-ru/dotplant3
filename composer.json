@@ -1,0 +1,51 @@
+{
+    "name": "devgroup/dotplant3",
+    "description": "DotPlant3 is a Yii framework 2 powered CMS for modern sites",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexander Kozhevnikov",
+            "email": "b37hr3z3n@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "devgroup/dotplant": "dev-master",
+        "phpunit/phpunit": "~4.0",
+        "phpunit/dbunit": "~1.0"
+    },
+    "require-dev": {
+        "devgroup/dotplant-dev": "dev-master"
+    },
+    "config": {
+      "process-timeout": 1800,
+      "preferred-install": "dist",
+      "store-auths": true
+    },
+    "scripts": {
+      "post-create-project-cmd": [
+        "yii\\composer\\Installer::postCreateProject"
+      ]
+    },
+    "extra": {
+      "yii\\composer\\Installer::postCreateProject": {
+        "setPermission": [
+          {
+            "runtime": "0777",
+            "web/assets": "0777",
+            "dev-symlinks.sh": "0755",
+            "create-migration.sh": "0755",
+            "yii": "0755"
+          }
+        ],
+        "generateCookieValidationKey": [
+          "config/web.php"
+        ]
+      },
+      "asset-installer-paths": {
+        "npm-asset-library": "vendor/npm",
+        "bower-asset-library": "vendor/bower"
+      }
+    }
+}
