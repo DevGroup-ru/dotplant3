@@ -1,6 +1,6 @@
 <?php
 
-/* @var $this yii\web\View */
+/* @var $this \DevGroup\Frontend\monster\MonsterWebView */
 
 use yii\helpers\Html;
 
@@ -16,3 +16,13 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <code><?= __FILE__ ?></code>
 </div>
+
+<?php $this->beginMonster() ?>
+
+<?=
+\app\widgets\ContentBlock005::widget([
+    'title' => 'Advantages',
+])
+?>
+
+<?php $this->endMonster() ?>

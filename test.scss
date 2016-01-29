@@ -1,0 +1,92 @@
+// @group global
+// @desc Base line height
+// @type measure
+$base-line-height: 1em;
+
+
+
+.m-wrapper {
+
+  //
+  // @desc Content block #2
+  // @group content-blocks
+  //
+  @include block(content002) {
+    text-align: center;
+
+    // @description Align text to the left
+    @include modifier(left) {
+      text-align: left;
+    }
+
+    // @desc Nested element of content block - content entity
+    @include element(nested) {
+      @include _(3 3 4 4 4);
+      margin-top: $base-line-height * 2;
+      margin-bottom: $base-line-height * 2;
+    }
+
+    @include element(nested) {
+      // this should be mixed with upper element
+      text-decoration: underline;
+    }
+
+    @include element(title) {
+      @extend %heading;
+      @include _($full-row-configuration);
+    }
+
+    @include element(title-nested) {
+      @include type-setting(accent-text);
+      margin-bottom: $base-line-height;
+      height: $base-line-height * 4;
+      overflow: hidden;
+      display: block;
+      text-decoration: none;
+
+      &:hover{
+        text-decoration: underline;
+      }
+
+      @include _(greater than tablet) {
+        margin-bottom: $base-line-height * 2;
+      }
+    }
+
+    @include element(img) {
+      margin-bottom: $base-line-height;
+      height: $base-line-height * 12;
+      overflow: hidden;
+      position: relative;
+
+      img {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+        min-height: 100%;
+        min-width: 100%;
+      }
+
+      @include _(greater than tablet) {
+        margin-bottom: $base-line-height * 2;
+      }
+    }
+
+    @include element(text) {
+      @include type-setting(text);
+      height: $base-line-height * 6;
+      overflow: hidden;
+    }
+  }
+}
+
+another {
+  test {
+
+  }
+}

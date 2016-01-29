@@ -5,9 +5,13 @@ namespace app\controllers;
 use DevGroup\DeferredTasks\actions\ReportQueueItem;
 use DevGroup\DeferredTasks\helpers\DeferredHelper;
 use DevGroup\DeferredTasks\helpers\ReportingTask;
+use DevGroup\Frontend\Monster\bem\Annotator;
+use DevGroup\Frontend\Monster\bem\MonsterGroup;
+use DevGroup\Frontend\Monster\bem\MonsterVariable;
 use DevGroup\Users\actions\Registration;
 use Yii;
 use yii\helpers\Url;
+use yii\helpers\VarDumper;
 use yii\web\Controller;
 use app\models\ContactForm;
 use yii\web\Response;
@@ -34,6 +38,16 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
+        $annotator = new Annotator();
+        $tree = $annotator->annotate(Yii::getAlias('@app/test.scss'));
+        VarDumper::dump($tree, 50, true);
+        echo "<h1>All Vars</h1>";
+        VarDumper::dump(MonsterVariable::$globalIdentityMap, 10, true);
+        echo "<h1>All Groups</h1>";
+        VarDumper::dump(MonsterGroup::$globalIdentityMap, 10, true);
+        die();
+
+
         return $this->render('index');
     }
 

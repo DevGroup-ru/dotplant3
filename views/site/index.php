@@ -1,6 +1,6 @@
 <?php
 
-/* @var $this yii\web\View */
+/* @var $this \DevGroup\Frontend\monster\MonsterWebView */
 
 use app\helpers\DefaultRouteHelper;
 use app\models\Article;
@@ -16,4 +16,33 @@ $this->title = 'Главная страница';
 
 ?>
     index
+<?php for($i=0;$i<10;$i++) {
+    echo \DevGroup\Frontend\monster\materials\ContentBlocks\ContentBlock005::widget([
+        'params' => [
+            'title' => 'test',
+        ],
+        'bemCustomization' => [
+            'content005__text' => [
+                'utils' => [
+                    'one-line--center',
+                ],
+            ],
+            'content005__title' => [
+                'utils' => [
+                    'one-line--center',
+                ],
+            ],
+            'content005__title-nested' => [
+                'mods' => [
+                    'foo',
+                ],
+                'cls' => 'asd',
+                'utils' => [
+                    'one-line--center',
+                ],
+            ],
+        ],
+    ]);
+}
+?>
 

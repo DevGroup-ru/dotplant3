@@ -13,7 +13,11 @@
     "require": {
         "devgroup/dotplant": "dev-master",
         "phpunit/phpunit": "~4.0",
-        "phpunit/dbunit": "~1.0"
+        "phpunit/dbunit": "~1.0",
+        "mihaeu/html-formatter": "^1.0",
+        "devgroup/bh": "^4.2.0",
+        "yiisoft/yii2-twig": "^2.0.4",
+        "fxp/composer-asset-plugin": "^1.1"
     },
     "require-dev": {
         "devgroup/dotplant-dev": "dev-master"
