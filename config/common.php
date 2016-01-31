@@ -7,8 +7,12 @@ $config = [
         'adminUtils',
         'extensions-manager',
         'users',
+        'bemRepository',
     ],
     'components' => [
+        'bemRepository' => [
+            'class' => '\DotPlant\Monster\BemRepository',
+        ],
         'cache' => require(__DIR__ . DIRECTORY_SEPARATOR . 'cache.php'),
 
         'db' => require(__DIR__ . DIRECTORY_SEPARATOR . 'db.php'),

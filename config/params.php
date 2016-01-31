@@ -5,12 +5,13 @@ $config = [
     'yii.migrations' => [
         '@dataStructure/migrations/',
         '@yii/rbac/migrations/',
+        '@vendor/devgroup/yii2-deferred-tasks/src/migrations/',
 
     ],
     'icon-framework' => 'fa',
     'PolyglotTranslationPath' => '@app/messages/polyglot.js',
     'deferred.env' => [
-        'HOME' => '/home/vagrant/',
+        'HOME' => '/Users/bethrezen',
     ],
     'uploadPath' => '@webroot/files/',
 ];

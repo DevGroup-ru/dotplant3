@@ -12,10 +12,11 @@ class AppAsset extends AssetBundle
 
     public $sourcePath = '@app/assets/frontend-monster/dist/assets/toolkit/';
     public $css = [
-
+        'styles/toolkit.css',
     ];
 
     public $js = [
+        'scripts/toolkit.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',
@@ -24,8 +25,8 @@ class AppAsset extends AssetBundle
     public function init()
     {
         parent::init();
-        $this->css[] = YII_ENV === 'dev' ? 'styles/toolkit.css' : 'styles/toolkit.min.css';
+//        $this->css[] = YII_ENV === 'dev' ? 'styles/toolkit.css' : 'styles/toolkit.min.css';
 
-        $this->js[] = YII_ENV === 'dev' ? 'scripts/toolkit.js' : 'scripts/toolkit.min.js';
+//        $this->js[] = YII_ENV === 'dev' ? 'scripts/toolkit.js' : 'scripts/toolkit.min.js';
     }
 }

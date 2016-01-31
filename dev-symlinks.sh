@@ -10,15 +10,17 @@ yii2-frontend-utils
 yii2-extensions-manager
 yii2-users-module'
 
-$CURDIR=`pwd`
+CURRENT_DIRECTORY=`pwd`
 
 for Package in $PACKAGES
 do
-    cd ../../../$Package
+    cd ../$Package
+    echo "Updating git $Package"
     git pull
+
 done
 
-cd $CURDIR
+cd $CURRENT_DIRECTORY
 
 for Package in $PACKAGES
 do
@@ -33,9 +35,8 @@ do
     ln -s ../../../$Package vendor/devgroup/
 done
 
-rm -rf vendor/bower/frontend-monster
 rm -rf vendor/devgroup/bh
-ln -s ../../../frontend-monster vendor/bower/
 ln -s ../../../bh-php vendor/devgroup/bh
-chmod +r vendor/bower/frontend-monster/dist/*/*
+rm -rf vendor/dotplant/monster
+ln -s ../../../monster vendor/dotplant/monster
 ls -la vendor/devgroup

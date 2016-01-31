@@ -1,0 +1,191 @@
+<?php
+/*
+ * ! WARNING !
+ *
+ * This file is auto-generated.
+ * Please don't modify it by-hand or all your changes can be lost.
+ */
+
+return[
+    'rmrevin/yii2-fontawesome' => [
+        'composer_name' => 'rmrevin/yii2-fontawesome',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 1,
+        'is_core' => 0,
+    ],
+    'cebe/yii2-gravatar' => [
+        'composer_name' => 'cebe/yii2-gravatar',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 0,
+        'is_core' => 0,
+    ],
+    'yiisoft/yii2-bootstrap' => [
+        'composer_name' => 'yiisoft/yii2-bootstrap',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 0,
+        'is_core' => 0,
+    ],
+    'dmstr/yii2-adminlte-asset' => [
+        'composer_name' => 'dmstr/yii2-adminlte-asset',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 0,
+        'is_core' => 0,
+    ],
+    'dmstr/yii2-migrate-command' => [
+        'composer_name' => 'dmstr/yii2-migrate-command',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 0,
+        'is_core' => 0,
+    ],
+    'devgroup/yii2-tag-dependency-helper' => [
+        'composer_name' => 'devgroup/yii2-tag-dependency-helper',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 0,
+        'is_core' => 0,
+    ],
+    'kartik-v/yii2-krajee-base' => [
+        'composer_name' => 'kartik-v/yii2-krajee-base',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 0,
+        'is_core' => 0,
+    ],
+    'yiisoft/yii2-jui' => [
+        'composer_name' => 'yiisoft/yii2-jui',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 0,
+        'is_core' => 0,
+    ],
+    'kartik-v/yii2-icons' => [
+        'composer_name' => 'kartik-v/yii2-icons',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 0,
+        'is_core' => 0,
+    ],
+    'yii2tech/filedb' => [
+        'composer_name' => 'yii2tech/filedb',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 0,
+        'is_core' => 0,
+    ],
+    'unclead/yii2-multiple-input' => [
+        'composer_name' => 'unclead/yii2-multiple-input',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 0,
+        'is_core' => 0,
+    ],
+    'hector68/yii2-map-input-widget' => [
+        'composer_name' => 'hector68/yii2-map-input-widget',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 0,
+        'is_core' => 0,
+    ],
+    'kartik-v/yii2-widget-select2' => [
+        'composer_name' => 'kartik-v/yii2-widget-select2',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 0,
+        'is_core' => 0,
+    ],
+    'arogachev/yii2-sortable' => [
+        'composer_name' => 'arogachev/yii2-sortable',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 0,
+        'is_core' => 0,
+    ],
+    'yiisoft/yii2-elasticsearch' => [
+        'composer_name' => 'yiisoft/yii2-elasticsearch',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 0,
+        'is_core' => 0,
+    ],
+    'yiisoft/yii2-authclient' => [
+        'composer_name' => 'yiisoft/yii2-authclient',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 0,
+        'is_core' => 0,
+    ],
+    'yiisoft/yii2-faker' => [
+        'composer_name' => 'yiisoft/yii2-faker',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 0,
+        'is_core' => 0,
+    ],
+    'yiisoft/yii2-debug' => [
+        'composer_name' => 'yiisoft/yii2-debug',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 0,
+        'is_core' => 0,
+    ],
+    'yiisoft/yii2-gii' => [
+        'composer_name' => 'yiisoft/yii2-gii',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 0,
+        'is_core' => 0,
+    ],
+    'yiisoft/yii2-codeception' => [
+        'composer_name' => 'yiisoft/yii2-codeception',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 0,
+        'is_core' => 0,
+    ],
+    'yiisoft/yii2-twig' => [
+        'composer_name' => 'yiisoft/yii2-twig',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 1,
+        'is_core' => 0,
+    ],
+    'devgroup/yii2-polyglot' => [
+        'composer_name' => 'devgroup/yii2-polyglot',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 1,
+        'is_core' => 0,
+    ],
+    'devgroup/yii2-multilingual' => [
+        'composer_name' => 'devgroup/yii2-multilingual',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 1,
+        'is_core' => 0,
+    ],
+    'devgroup/yii2-admin-utils' => [
+        'composer_name' => 'devgroup/yii2-admin-utils',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 1,
+        'is_core' => 0,
+    ],
+    'devgroup/yii2-data-structure-tools' => [
+        'composer_name' => 'devgroup/yii2-data-structure-tools',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 1,
+        'is_core' => 0,
+    ],
+    'devgroup/yii2-users-module' => [
+        'composer_name' => 'devgroup/yii2-users-module',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 1,
+        'is_core' => 0,
+    ],
+    'devgroup/yii2-deferred-tasks' => [
+        'composer_name' => 'devgroup/yii2-deferred-tasks',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 1,
+        'is_core' => 0,
+    ],
+    'devgroup/yii2-extensions-manager' => [
+        'composer_name' => 'devgroup/yii2-extensions-manager',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 1,
+        'is_core' => 0,
+    ],
+    'devgroup/yii2-intent-analytics' => [
+        'composer_name' => 'devgroup/yii2-intent-analytics',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 1,
+        'is_core' => 0,
+    ],
+    'devgroup/yii2-frontend-utils' => [
+        'composer_name' => 'devgroup/yii2-frontend-utils',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 1,
+        'is_core' => 0,
+    ],
+];
+

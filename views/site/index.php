@@ -1,6 +1,6 @@
 <?php
 
-/* @var $this \DevGroup\Frontend\monster\MonsterWebView */
+/* @var $this \DotPlant\Monster\MonsterWebView */
 
 use app\helpers\DefaultRouteHelper;
 use app\models\Article;
@@ -17,30 +17,20 @@ $this->title = 'Главная страница';
 ?>
     index
 <?php for($i=0;$i<10;$i++) {
-    echo \DevGroup\Frontend\monster\materials\ContentBlocks\ContentBlock005::widget([
+    echo \DotPlant\Monster\materials\BaseMaterial::widget([
+        'block' => 'content001',
         'params' => [
-            'title' => 'test',
+            'title' => 'test'.$i,
         ],
         'bemCustomization' => [
-            'content005__text' => [
+
+            'content001__title' => [
+                'content' => 'test'.$i,
                 'utils' => [
                     'one-line--center',
                 ],
             ],
-            'content005__title' => [
-                'utils' => [
-                    'one-line--center',
-                ],
-            ],
-            'content005__title-nested' => [
-                'mods' => [
-                    'foo',
-                ],
-                'cls' => 'asd',
-                'utils' => [
-                    'one-line--center',
-                ],
-            ],
+
         ],
     ]);
 }

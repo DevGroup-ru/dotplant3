@@ -35,7 +35,7 @@ $config = [
             'errorAction' => 'site/error',
         ],
         'view' => [
-            'class' => \DevGroup\Frontend\monster\MonsterWebView::className(),
+            'class' => \DotPlant\Monster\MonsterWebView::className(),
         ],
         'authClientCollection' => [
             'class' => 'yii\authclient\Collection',
