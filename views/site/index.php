@@ -22,15 +22,21 @@ $this->title = 'Главная страница';
         'params' => [
             'title' => 'test'.$i,
         ],
+        'editableValues' => [
+            'content001__title' => 'На лабутенах - '.$i,
+            'nested-1' => [
+                'content001__title-nested' => 'И в офигительных штанах'.$i,
+                'content001__text' => 'Идейные соображения высшего порядка, а также сложившаяся структура организации в значительной степени обуславливает создание систем массового участия',
+            ],
+        ],
+        'uniqueTemplateId' => 'MonsterForTest',
         'bemCustomization' => [
-
             'content001__title' => [
                 'content' => 'test'.$i,
                 'utils' => [
                     'one-line--center',
                 ],
             ],
-
         ],
     ]);
 }
