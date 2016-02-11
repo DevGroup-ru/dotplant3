@@ -16,7 +16,7 @@ $this->title = 'Главная страница';
 
 ?>
     index
-<?php for($i=0;$i<10;$i++) {
+<?php /*for($i=0;$i<10;$i++) {
     echo \DotPlant\Monster\materials\BaseMaterial::widget([
         'block' => 'content001',
         'params' => [
@@ -40,5 +40,39 @@ $this->title = 'Главная страница';
         ],
     ]);
 }
-?>
+*/
+
+$content = new \DotPlant\Monster\MonsterContent([
+    'uniqueContentId' => 'site-index',
+    'materials' => [
+        [
+            'block' => 'content001',
+            'editableValues' => [
+                'content001__title' => 'На лабутенах - 1',
+                'nested-1' => [
+                    'content001__title-nested' => 'И в офигительных штанах 1',
+                    'content001__text' => 'Идейные соображения высшего порядка, а также сложившаяся структура организации в значительной степени обуславливает создание систем массового участия',
+                ],
+            ],
+            'bemCustomization' => [
+                'content001__title' => [
+                    'mods' => ['blue',],
+                ],
+            ],
+            'cacheOn' => true,
+        ],
+        [
+            'block' => 'content001',
+            'editableValues' => [
+                'content001__title' => 'На лабутенах - 2',
+                'nested-1' => [
+                    'content001__title-nested' => 'И в офигительных штанах 2',
+                    'content001__text' => 'Идейные соображения высшего порядка, а также сложившаяся структура организации в значительной степени обуславливает создание систем массового участия',
+                ],
+            ],
+            'cacheOn' => true,
+        ],
+    ],
+]);
+echo $content->render();
 

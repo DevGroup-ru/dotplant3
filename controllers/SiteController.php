@@ -110,7 +110,8 @@ class SiteController extends Controller
 //        echo "<h1>All Files</h1>";
 //        VarDumper::dump($annotator->processedFiles, 10, true);
 //        die();
-        VarDumper::dump(Yii::$app->bemRepository->groups, 10, true);
+//        VarDumper::dump(Yii::$app->bemRepository->materials, 3, true);
+//        VarDumper::dump(Yii::$app->bemRepository->groups, 10, true);
 
         return $this->render('index');
     }

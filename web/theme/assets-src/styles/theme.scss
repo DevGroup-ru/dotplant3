@@ -1,0 +1,17 @@
+@import "../../../../assets/frontend-monster/src/assets/toolkit/styles/bootstrap.scss";
+
+// @desc Dark background
+// @var-type color
+$dark-bg: #6B6F75;
+
+
+// @desc Custom header
+// @group Custom
+@include block(header) {
+  background: $dark-bg;
+  color: #fff;
+
+  @include element(link) {
+    font-weight: bold;
+  }
+}

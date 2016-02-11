@@ -78,7 +78,9 @@ $config = [
         ],
         'users' => [
             'class' => 'DevGroup\Users\UsersModule',
-            'layout' => '@app/views/layouts/in-container'
+        ],
+        'monster' => [
+            'class' => 'DotPlant\Monster\MonsterModule',
         ],
     ],
     'params' => require(__DIR__ . '/params.php'),
