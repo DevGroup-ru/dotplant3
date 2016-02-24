@@ -93,7 +93,13 @@ $localConfig = __DIR__ . DIRECTORY_SEPARATOR . 'common-local.php';
 if (file_exists($localConfig)) {
     $config = \yii\helpers\ArrayHelper::merge($config, require($localConfig));
 }
-
+$aliasesConfig = __DIR__ . DIRECTORY_SEPARATOR . 'generated/aliases-generated.php';
+if (true === file_exists($aliasesConfig)) {
+    $generated = require $aliasesConfig;
+    isset($config['aliases']) ?
+        $config['aliases'] = \yii\helpers\ArrayHelper::merge($config['aliases'], $generated)
+        : $config['aliases'] = $generated;
+}
 $config = \yii\helpers\ArrayHelper::merge($config, require(__DIR__ . DIRECTORY_SEPARATOR . 'gii.php'));
 
 return $config;
