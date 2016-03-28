@@ -13,7 +13,8 @@
     "require": {
         "devgroup/dotplant": "dev-master",
         "fxp/composer-asset-plugin": "^1.1",
-        "devgroup/yii2-users-module": "dev-master"
+        "devgroup/yii2-users-module": "dev-master",
+        "wikimedia/composer-merge-plugin": "^1.3"
     },
     "require-dev": {
         "devgroup/dotplant-dev": "dev-master"
@@ -46,6 +47,11 @@
       "asset-installer-paths": {
         "npm-asset-library": "vendor/npm",
         "bower-asset-library": "vendor/bower"
+    },
+      "merge-plugin": {
+        "include": [
+          "extensions/composer.json"
+        ]
       }
     }
 }
