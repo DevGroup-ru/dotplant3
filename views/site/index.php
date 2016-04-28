@@ -42,7 +42,7 @@ $this->title = 'Главная страница';
 }
 */
 
-$content = new \DotPlant\Monster\MonsterContent([
+echo \DotPlant\Monster\MonsterContent::widget([
     'uniqueContentId' => 'site-index',
     'materials' => [
         [
@@ -74,5 +74,5 @@ $content = new \DotPlant\Monster\MonsterContent([
         ],
     ],
 ]);
-echo $content->render();
+
 

@@ -23,7 +23,7 @@ AppAsset::register($this);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= Html::encode($this->title) ?></title>
-
+    <meta http-equiv="content-language" content="<?=Yii::$app->language?>">
     <?= Html::csrfMetaTags() ?>
     <?php $this->head(); ?>
 

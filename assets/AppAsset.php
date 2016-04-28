@@ -16,6 +16,7 @@ class AppAsset extends AssetBundle
     ];
 
     public $js = [
+        'libs/libs.js',
         'scripts/toolkit.js',
     ];
     public $depends = [
