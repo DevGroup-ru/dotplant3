@@ -14,7 +14,8 @@
         "devgroup/dotplant": "dev-master",
         "fxp/composer-asset-plugin": "~1.1.1",
         "devgroup/yii2-users-module": "dev-master",
-        "wikimedia/composer-merge-plugin": "^1.3"
+        "wikimedia/composer-merge-plugin": "^1.3",
+        "symfony/finder": "^3.0"
     },
     "require-dev": {
         "devgroup/dotplant-dev": "dev-master"

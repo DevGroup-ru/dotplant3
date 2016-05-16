@@ -7,14 +7,9 @@ $config = [
         'adminUtils',
         'extensions-manager',
         'users',
-        'bemRepository',
     ],
     'components' => [
-        'bemRepository' => [
-            'class' => '\DotPlant\Monster\BemRepository',
-        ],
         'cache' => require(__DIR__ . DIRECTORY_SEPARATOR . 'cache.php'),
-
         'db' => require(__DIR__ . DIRECTORY_SEPARATOR . 'db.php'),
         'filedb' => [
             'class' => 'yii2tech\filedb\Connection',
@@ -45,6 +40,20 @@ $config = [
             'forceScheme' => 'http',
             'forcePort' => 80,
             'hostInfo' => 'http://dotplant3.dev',
+        ],
+        'monsterRepository' => [
+            'class' => 'DotPlant\Monster\Repository',
+        ],
+        'monsterCache' => [
+            'class' => 'DotPlant\Monster\Cache',
+        ],
+        'monsterBh' => [
+            'class' => 'DotPlant\Monster\MonsterBh',
+            'expander' => 'monsterBhExpander',
+        ],
+        'monsterBhExpander' => [
+            'class' => 'DotPlant\Monster\MonsterBhExpander',
+            'monsterBh' => 'monsterBh',
         ],
         'multilingual' => [
             'class' => \DevGroup\Multilingual\Multilingual::className(),

@@ -7,6 +7,7 @@ use DevGroup\DeferredTasks\helpers\DeferredHelper;
 use DevGroup\DeferredTasks\helpers\ReportingTask;
 use DotPlant\Monster\bem\MonsterGroup;
 use DotPlant\Monster\bem\MonsterVariable;
+use DotPlant\Monster\Repository;
 use yii;
 use yii\helpers\VarDumper;
 use yii\web\Controller;
@@ -34,35 +35,13 @@ class SiteController extends Controller
 
     public function actionUn()
     {
-        Yii::beginProfile('Unserialize monster');
-        Yii::beginProfile('Unserialize groups');
-        MonsterGroup::$globalIdentityMap = unserialize(
-            file_get_contents(
-                Yii::getAlias('@app/runtime/monster-groups.ser')
-            )
-        );
-        Yii::endProfile('Unserialize groups');
-        Yii::beginProfile('Unserialize vars');
-        MonsterVariable::$globalIdentityMap = unserialize(
-            file_get_contents(
-                Yii::getAlias('@app/runtime/monster-vars.ser')
-            )
-        );
-        Yii::endProfile('Unserialize vars');
-        Yii::beginProfile('Unserialize tree');
-        $tree = unserialize(
-            file_get_contents(
-                Yii::getAlias('@app/runtime/monster-materials.ser')
-            )
-        );
-        Yii::endProfile('Unserialize tree');
-        Yii::endProfile('Unserialize monster');
+        yii\helpers\FileHelper::removeDirectory(Yii::getAlias('@app/monster/'));
+        /** @var Repository $repository */
+        $repository = Yii::$app->monsterRepository;
+        $repository->reloadBundles();
 
-        Yii::beginProfile('Print tree');
-        $s = VarDumper::export($tree);
-        Yii::endProfile('Print tree');
-//        VarDumper::dump($tree, 50, true);
-        return $this->renderContent("<PRE>$s</PRE>");
+
+        return $this->renderContent(VarDumper::dumpAsString($repository->bundles, 10, true));
     }
 
     public function actionIndex()
