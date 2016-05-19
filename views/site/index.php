@@ -44,34 +44,12 @@ $this->title = 'Главная страница';
 
 echo \DotPlant\Monster\MonsterContent::widget([
     'uniqueContentId' => 'site-index',
+    'data' => ['user' => 'Василий Иванович Пупкин'],
     'materials' => [
         [
-            'block' => 'content001',
-            'editableValues' => [
-                'content001__title' => 'На лабутенах - 1',
-                'nested-1' => [
-                    'content001__title-nested' => 'И в офигительных штанах 1',
-                    'content001__text' => 'Идейные соображения высшего порядка, а также сложившаяся структура организации в значительной степени обуславливает создание систем массового участия',
-                ],
-            ],
-            'bemCustomization' => [
-                'content001__title' => [
-                    'mods' => ['blue',],
-                ],
-            ],
-            'cacheOn' => true,
+            'material' => 'core.frontend-monster.content-blocks.content-block-001',
         ],
-        [
-            'block' => 'content001',
-            'editableValues' => [
-                'content001__title' => 'На лабутенах - 2',
-                'nested-1' => [
-                    'content001__title-nested' => 'И в офигительных штанах 2',
-                    'content001__text' => 'Идейные соображения высшего порядка, а также сложившаяся структура организации в значительной степени обуславливает создание систем массового участия',
-                ],
-            ],
-            'cacheOn' => true,
-        ],
+
     ],
 ]);
 

@@ -41,7 +41,7 @@ class SiteController extends Controller
         $repository->reloadBundles();
 
 
-        return $this->renderContent(VarDumper::dumpAsString($repository->bundles, 10, true));
+        return $this->renderContent(VarDumper::dumpAsString($repository->bundles, 2, true));
     }
 
     public function actionIndex()

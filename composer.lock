@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "cada44346b6b97b9fbe246dd85949bda",
-    "content-hash": "c279bffb4f7b0ebb3a6b158d777ac900",
+    "hash": "2c91badb7a1896de0a1ffb4d4f6e9027",
+    "content-hash": "38dc5a0d70dd6a6373d609bb527f0fdf",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -492,12 +492,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/lipis/flag-icon-css.git",
-                "reference": "d9c140891b443b02acf7f2ebba9bb2121ea555a8"
+                "reference": "836eca11ecf437ae3d0f0c93dd245ab00d94cee1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lipis/flag-icon-css/zipball/d9c140891b443b02acf7f2ebba9bb2121ea555a8",
-                "reference": "d9c140891b443b02acf7f2ebba9bb2121ea555a8",
+                "url": "https://api.github.com/repos/lipis/flag-icon-css/zipball/836eca11ecf437ae3d0f0c93dd245ab00d94cee1",
+                "reference": "836eca11ecf437ae3d0f0c93dd245ab00d94cee1",
                 "shasum": ""
             },
             "type": "component",
@@ -522,7 +522,7 @@
                 }
             ],
             "description": "CSS for vector based country flags",
-            "time": "2016-05-08 12:24:15"
+            "time": "2016-05-18 13:50:30"
         },
         {
             "name": "devgroup/bh",
@@ -635,12 +635,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/DevGroup-ru/yii2-admin-utils.git",
-                "reference": "e4bba84b06c9aac73c3e48978aa0fc107a6fd9fc"
+                "reference": "e745bf1ecaaa536d4f01b6fb84824858a5c1b1d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DevGroup-ru/yii2-admin-utils/zipball/e4bba84b06c9aac73c3e48978aa0fc107a6fd9fc",
-                "reference": "e4bba84b06c9aac73c3e48978aa0fc107a6fd9fc",
+                "url": "https://api.github.com/repos/DevGroup-ru/yii2-admin-utils/zipball/e745bf1ecaaa536d4f01b6fb84824858a5c1b1d8",
+                "reference": "e745bf1ecaaa536d4f01b6fb84824858a5c1b1d8",
                 "shasum": ""
             },
             "require": {
@@ -678,7 +678,7 @@
                 "extension",
                 "yii2"
             ],
-            "time": "2016-04-29 07:39:19"
+            "time": "2016-05-19 12:23:03"
         },
         {
             "name": "devgroup/yii2-data-structure-tools",
@@ -686,28 +686,30 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/DevGroup-ru/yii2-data-structure-tools.git",
-                "reference": "791384c8d9f34f6a3a654693caf3a64f239cfa81"
+                "reference": "c109a03d5a22b908770ab41c7a61de17f8939bef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DevGroup-ru/yii2-data-structure-tools/zipball/791384c8d9f34f6a3a654693caf3a64f239cfa81",
-                "reference": "791384c8d9f34f6a3a654693caf3a64f239cfa81",
+                "url": "https://api.github.com/repos/DevGroup-ru/yii2-data-structure-tools/zipball/c109a03d5a22b908770ab41c7a61de17f8939bef",
+                "reference": "c109a03d5a22b908770ab41c7a61de17f8939bef",
                 "shasum": ""
             },
             "require": {
                 "arogachev/yii2-sortable": "^0.1.5",
                 "devgroup/yii2-multilingual": "*",
                 "devgroup/yii2-tag-dependency-helper": "^1.3.0",
+                "elasticsearch/elasticsearch": "^2.1",
                 "hector68/yii2-map-input-widget": "^2.0",
                 "kartik-v/yii2-widget-select2": "^2.0.0",
                 "php": ">=5.5.0",
+                "rmrevin/yii2-fontawesome": "~2.14",
                 "unclead/yii2-multiple-input": "~1.2.3",
-                "yiisoft/yii2": "^2.0.6",
-                "yiisoft/yii2-elasticsearch": "^2.0@dev"
+                "yiisoft/yii2": "^2.0.6"
             },
             "require-dev": {
                 "devgroup/dotplant-dev": "~1.0.0",
                 "devgroup/yii2-admin-utils": "dev-master",
+                "elasticsearch/elasticsearch": "^2.1",
                 "yiisoft/yii2-bootstrap": "^2.0@dev"
             },
             "type": "yii2-extension",
@@ -741,7 +743,7 @@
                 "tree",
                 "yii2"
             ],
-            "time": "2016-05-12 07:47:24"
+            "time": "2016-05-19 10:34:53"
         },
         {
             "name": "devgroup/yii2-deferred-tasks",
@@ -1153,12 +1155,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/DevGroup-ru/yii2-users-module.git",
-                "reference": "0076fa5036f7fa900cd8b233d93f996c4016dc74"
+                "reference": "f7838ff5f47714177d7c2286b956f2928b6a3d53"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DevGroup-ru/yii2-users-module/zipball/0076fa5036f7fa900cd8b233d93f996c4016dc74",
-                "reference": "0076fa5036f7fa900cd8b233d93f996c4016dc74",
+                "url": "https://api.github.com/repos/DevGroup-ru/yii2-users-module/zipball/f7838ff5f47714177d7c2286b956f2928b6a3d53",
+                "reference": "f7838ff5f47714177d7c2286b956f2928b6a3d53",
                 "shasum": ""
             },
             "require": {
@@ -1201,7 +1203,7 @@
                 "rbac",
                 "yii2"
             ],
-            "time": "2016-03-28 10:06:19"
+            "time": "2016-05-19 12:50:28"
         },
         {
             "name": "dmstr/yii2-adminlte-asset",
@@ -1370,12 +1372,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/DevGroup-ru/dotplant-monster.git",
-                "reference": "8c21fbb67cdf7f8676132c2dca40379e61bea22e"
+                "reference": "9629e07d0ad538ef5810fa8f8950bd606cf5b077"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DevGroup-ru/dotplant-monster/zipball/8c21fbb67cdf7f8676132c2dca40379e61bea22e",
-                "reference": "8c21fbb67cdf7f8676132c2dca40379e61bea22e",
+                "url": "https://api.github.com/repos/DevGroup-ru/dotplant-monster/zipball/9629e07d0ad538ef5810fa8f8950bd606cf5b077",
+                "reference": "9629e07d0ad538ef5810fa8f8950bd606cf5b077",
                 "shasum": ""
             },
             "require": {
@@ -1387,7 +1389,7 @@
             "require-dev": {
                 "devgroup/dotplant-dev": "~1.0"
             },
-            "type": "dotplant-extension",
+            "type": "yii2-extension",
             "extra": {
                 "yii2-extension": {
                     "name": "DotPlant monster",
@@ -1398,7 +1400,7 @@
                 "migrationPath": [
                     "src/migrations/"
                 ],
-                "bootstrap": "DevGroup\\Monster\\ExtensionBootstrap",
+                "bootstrap": "DotPlant\\Monster\\ExtensionBootstrap",
                 "configurables": "src/configurables.php",
                 "translationCategory": "dotplant.monster"
             },
@@ -1418,7 +1420,61 @@
                 }
             ],
             "description": "Here be monsters",
-            "time": "2016-05-16 09:15:18"
+            "time": "2016-05-19 14:14:32"
+        },
+        {
+            "name": "elasticsearch/elasticsearch",
+            "version": "v2.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/elastic/elasticsearch-php.git",
+                "reference": "c1675245c0a6f789cbb80b3e0b333b9ef521a627"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/elastic/elasticsearch-php/zipball/c1675245c0a6f789cbb80b3e0b333b9ef521a627",
+                "reference": "c1675245c0a6f789cbb80b3e0b333b9ef521a627",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/ringphp": "~1.0",
+                "php": ">=5.4",
+                "psr/log": "~1.0"
+            },
+            "require-dev": {
+                "athletic/athletic": "~0.1",
+                "cpliakas/git-wrapper": "~1.0",
+                "mockery/mockery": "0.9.4",
+                "phpunit/phpunit": "~4.7",
+                "symfony/yaml": "2.4.3 as 2.4.2",
+                "twig/twig": "1.*"
+            },
+            "suggest": {
+                "ext-curl": "*",
+                "monolog/monolog": "Allows for client-level logging and tracing"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Elasticsearch\\": "src/Elasticsearch/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache 2"
+            ],
+            "authors": [
+                {
+                    "name": "Zachary Tong"
+                }
+            ],
+            "description": "PHP Client for Elasticsearch",
+            "keywords": [
+                "client",
+                "elasticsearch",
+                "search"
+            ],
+            "time": "2016-03-18 16:31:37"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -1470,12 +1526,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FortAwesome/Font-Awesome.git",
-                "reference": "97412d13845d680ab6fbc6fe5d933eec033fd696"
+                "reference": "8e241f209faa1dd2182c9fdc9c352d8806504a4e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/97412d13845d680ab6fbc6fe5d933eec033fd696",
-                "reference": "97412d13845d680ab6fbc6fe5d933eec033fd696",
+                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/8e241f209faa1dd2182c9fdc9c352d8806504a4e",
+                "reference": "8e241f209faa1dd2182c9fdc9c352d8806504a4e",
                 "shasum": ""
             },
             "require-dev": {
@@ -1510,20 +1566,20 @@
                 "font",
                 "icon"
             ],
-            "time": "2016-05-05 16:56:57"
+            "time": "2016-05-13 15:42:25"
         },
         {
             "name": "fxp/composer-asset-plugin",
-            "version": "dev-master",
+            "version": "v1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/francoispluchino/composer-asset-plugin.git",
-                "reference": "bae7a15712e9339a2439aeca3b7c5ecf65b087d1"
+                "reference": "c3d803cc890fad5a7fb61a4036c5d973faae34af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/francoispluchino/composer-asset-plugin/zipball/bae7a15712e9339a2439aeca3b7c5ecf65b087d1",
-                "reference": "bae7a15712e9339a2439aeca3b7c5ecf65b087d1",
+                "url": "https://api.github.com/repos/francoispluchino/composer-asset-plugin/zipball/c3d803cc890fad5a7fb61a4036c5d973faae34af",
+                "reference": "c3d803cc890fad5a7fb61a4036c5d973faae34af",
                 "shasum": ""
             },
             "require": {
@@ -1531,7 +1587,7 @@
                 "php": ">=5.3.3"
             },
             "require-dev": {
-                "composer/composer": "~1.0@dev"
+                "composer/composer": "^1.0.0"
             },
             "type": "composer-plugin",
             "extra": {
@@ -1566,7 +1622,7 @@
                 "npm",
                 "package"
             ],
-            "time": "2016-02-25 16:35:08"
+            "time": "2016-04-22 08:48:58"
         },
         {
             "name": "guzzle/guzzle",
@@ -1662,6 +1718,107 @@
                 "web service"
             ],
             "time": "2015-04-29 17:06:53"
+        },
+        {
+            "name": "guzzlehttp/ringphp",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/RingPHP.git",
+                "reference": "9465032ac5d6beaa55f10923403e6e1c36018d9c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/RingPHP/zipball/9465032ac5d6beaa55f10923403e6e1c36018d9c",
+                "reference": "9465032ac5d6beaa55f10923403e6e1c36018d9c",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/streams": "~3.0",
+                "php": ">=5.4.0",
+                "react/promise": "~2.0"
+            },
+            "require-dev": {
+                "ext-curl": "*",
+                "phpunit/phpunit": "~4.0"
+            },
+            "suggest": {
+                "ext-curl": "Guzzle will use specific adapters if cURL is present"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Ring\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Provides a simple API and specification that abstracts away the details of HTTP into a single PHP function.",
+            "time": "2015-05-21 17:23:02"
+        },
+        {
+            "name": "guzzlehttp/streams",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/streams.git",
+                "reference": "d99a261c616210618ab94fd319cb17eda458cc3e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/streams/zipball/d99a261c616210618ab94fd319cb17eda458cc3e",
+                "reference": "d99a261c616210618ab94fd319cb17eda458cc3e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Stream\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Provides a simple abstraction over streams of data",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "Guzzle",
+                "stream"
+            ],
+            "time": "2016-04-13 16:32:01"
         },
         {
             "name": "hector68/yii2-map-input-widget",
@@ -1955,6 +2112,97 @@
                 "schedule"
             ],
             "time": "2016-01-26 21:23:30"
+        },
+        {
+            "name": "psr/log",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "d8e60a5619fff77f9669da8997697443ef1a1d7e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/d8e60a5619fff77f9669da8997697443ef1a1d7e",
+                "reference": "d8e60a5619fff77f9669da8997697443ef1a1d7e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "time": "2016-01-06 21:40:42"
+        },
+        {
+            "name": "react/promise",
+            "version": "v2.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reactphp/promise.git",
+                "reference": "8025426794f1944de806618671d4fa476dc7626f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/reactphp/promise/zipball/8025426794f1944de806618671d4fa476dc7626f",
+                "reference": "8025426794f1944de806618671d4fa476dc7626f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "React\\Promise\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Sorgalla",
+                    "email": "jsorgalla@gmail.com"
+                }
+            ],
+            "description": "A lightweight implementation of CommonJS Promises/A for PHP",
+            "time": "2016-05-03 17:50:52"
         },
         {
             "name": "rmrevin/yii2-fontawesome",
@@ -2546,55 +2794,6 @@
                 "yii2"
             ],
             "time": "2016-04-14 08:46:37"
-        },
-        {
-            "name": "yiisoft/yii2-elasticsearch",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yiisoft/yii2-elasticsearch.git",
-                "reference": "2c4a708d13f4431ca4a0543ebfb021806f1b7c9d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-elasticsearch/zipball/2c4a708d13f4431ca4a0543ebfb021806f1b7c9d",
-                "reference": "2c4a708d13f4431ca4a0543ebfb021806f1b7c9d",
-                "shasum": ""
-            },
-            "require": {
-                "ext-curl": "*",
-                "yiisoft/yii2": "*"
-            },
-            "type": "yii2-extension",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "yii\\elasticsearch\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Carsten Brandt",
-                    "email": "mail@cebe.cc"
-                }
-            ],
-            "description": "Elasticsearch integration and ActiveRecord for the Yii framework",
-            "keywords": [
-                "active-record",
-                "elasticsearch",
-                "fulltext",
-                "search",
-                "yii2"
-            ],
-            "time": "2016-05-11 17:33:57"
         },
         {
             "name": "yiisoft/yii2-jui",
@@ -3283,12 +3482,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "9f44734d4814d0a5632745bbd71ded5817a8b002"
+                "reference": "fc1d8cd5b5de11625979125c5639347896ac2c74"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/9f44734d4814d0a5632745bbd71ded5817a8b002",
-                "reference": "9f44734d4814d0a5632745bbd71ded5817a8b002",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/fc1d8cd5b5de11625979125c5639347896ac2c74",
+                "reference": "fc1d8cd5b5de11625979125c5639347896ac2c74",
                 "shasum": ""
             },
             "require": {
@@ -3347,7 +3546,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2016-05-12 16:52:51"
+            "time": "2016-05-17 03:09:28"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -3527,12 +3726,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/environment.git",
-                "reference": "2292b116f43c272ff4328083096114f84ea46a56"
+                "reference": "4e8f0da10ac5802913afc151413bc8c53b6c2716"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/2292b116f43c272ff4328083096114f84ea46a56",
-                "reference": "2292b116f43c272ff4328083096114f84ea46a56",
+                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/4e8f0da10ac5802913afc151413bc8c53b6c2716",
+                "reference": "4e8f0da10ac5802913afc151413bc8c53b6c2716",
                 "shasum": ""
             },
             "require": {
@@ -3569,7 +3768,7 @@
                 "environment",
                 "hhvm"
             ],
-            "time": "2016-05-04 07:59:13"
+            "time": "2016-05-17 03:18:57"
         },
         {
             "name": "sebastian/exporter",
@@ -4024,6 +4223,7 @@
     "stability-flags": {
         "devgroup/dotplant": 20,
         "devgroup/yii2-users-module": 20,
+        "devgroup/yii2-data-structure-tools": 20,
         "devgroup/dotplant-dev": 20
     },
     "prefer-stable": false,

@@ -9,15 +9,11 @@ use yii\web\AssetBundle;
  */
 class AppAsset extends AssetBundle
 {
-
-    public $sourcePath = '@app/assets/frontend-monster/dist/assets/toolkit/';
+    
     public $css = [
-        'styles/toolkit.css',
     ];
 
     public $js = [
-        'libs/libs.js',
-        'scripts/toolkit.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',
