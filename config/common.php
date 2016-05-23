@@ -53,7 +53,6 @@ $config = [
         ],
         'monsterBhExpander' => [
             'class' => 'DotPlant\Monster\MonsterBhExpander',
-            'monsterBh' => 'monsterBh',
         ],
         'multilingual' => [
             'class' => \DevGroup\Multilingual\Multilingual::className(),
