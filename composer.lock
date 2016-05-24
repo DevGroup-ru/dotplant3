@@ -146,54 +146,17 @@
             ]
         },
         {
-            "name": "bower-asset/fontawesome",
-            "version": "v4.6.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/FortAwesome/Font-Awesome.git",
-                "reference": "8e241f209faa1dd2182c9fdc9c352d8806504a4e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/8e241f209faa1dd2182c9fdc9c352d8806504a4e",
-                "reference": "8e241f209faa1dd2182c9fdc9c352d8806504a4e",
-                "shasum": ""
-            },
-            "type": "bower-asset-library",
-            "extra": {
-                "bower-asset-main": [
-                    "less/font-awesome.less",
-                    "scss/font-awesome.scss"
-                ],
-                "bower-asset-ignore": [
-                    "*/.*",
-                    "*.json",
-                    "src",
-                    "*.yml",
-                    "Gemfile",
-                    "Gemfile.lock",
-                    "*.md"
-                ]
-            },
-            "license": [
-                "OFL-1.1",
-                "MIT",
-                "CC-BY-3.0"
-            ],
-            "description": "Font Awesome"
-        },
-        {
             "name": "bower-asset/jquery",
-            "version": "2.2.3",
+            "version": "2.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jquery/jquery-dist.git",
-                "reference": "af22a351b2ea5801ffb1695abb3bb34d5bed9198"
+                "reference": "c0185ab7c75aab88762c5aae780b9d83b80eda72"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/af22a351b2ea5801ffb1695abb3bb34d5bed9198",
-                "reference": "af22a351b2ea5801ffb1695abb3bb34d5bed9198",
+                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/c0185ab7c75aab88762c5aae780b9d83b80eda72",
+                "reference": "c0185ab7c75aab88762c5aae780b9d83b80eda72",
                 "shasum": ""
             },
             "type": "bower-asset-library",
@@ -492,12 +455,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/lipis/flag-icon-css.git",
-                "reference": "836eca11ecf437ae3d0f0c93dd245ab00d94cee1"
+                "reference": "fc2002547cc287faa2bc5748f1b1d6a594f843cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lipis/flag-icon-css/zipball/836eca11ecf437ae3d0f0c93dd245ab00d94cee1",
-                "reference": "836eca11ecf437ae3d0f0c93dd245ab00d94cee1",
+                "url": "https://api.github.com/repos/lipis/flag-icon-css/zipball/fc2002547cc287faa2bc5748f1b1d6a594f843cc",
+                "reference": "fc2002547cc287faa2bc5748f1b1d6a594f843cc",
                 "shasum": ""
             },
             "type": "component",
@@ -522,7 +485,7 @@
                 }
             ],
             "description": "CSS for vector based country flags",
-            "time": "2016-05-18 13:50:30"
+            "time": "2016-05-23 16:30:24"
         },
         {
             "name": "devgroup/bh",
@@ -1372,12 +1335,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/DevGroup-ru/dotplant-monster.git",
-                "reference": "9629e07d0ad538ef5810fa8f8950bd606cf5b077"
+                "reference": "aa6d924e9631d79771727f62cf7faed5d4fb6f83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DevGroup-ru/dotplant-monster/zipball/9629e07d0ad538ef5810fa8f8950bd606cf5b077",
-                "reference": "9629e07d0ad538ef5810fa8f8950bd606cf5b077",
+                "url": "https://api.github.com/repos/DevGroup-ru/dotplant-monster/zipball/aa6d924e9631d79771727f62cf7faed5d4fb6f83",
+                "reference": "aa6d924e9631d79771727f62cf7faed5d4fb6f83",
                 "shasum": ""
             },
             "require": {
@@ -1420,7 +1383,7 @@
                 }
             ],
             "description": "Here be monsters",
-            "time": "2016-05-19 14:14:32"
+            "time": "2016-05-23 22:41:44"
         },
         {
             "name": "elasticsearch/elasticsearch",
@@ -2206,20 +2169,19 @@
         },
         {
             "name": "rmrevin/yii2-fontawesome",
-            "version": "2.14.0",
+            "version": "2.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rmrevin/yii2-fontawesome.git",
-                "reference": "baac28412963974940cbfb6b83940b3aa179b0ee"
+                "reference": "277edae224e63d2a41e00eb043829eab4903fdd5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rmrevin/yii2-fontawesome/zipball/baac28412963974940cbfb6b83940b3aa179b0ee",
-                "reference": "baac28412963974940cbfb6b83940b3aa179b0ee",
+                "url": "https://api.github.com/repos/rmrevin/yii2-fontawesome/zipball/277edae224e63d2a41e00eb043829eab4903fdd5",
+                "reference": "277edae224e63d2a41e00eb043829eab4903fdd5",
                 "shasum": ""
             },
             "require": {
-                "bower-asset/fontawesome": "4.6.*",
                 "php": ">=5.4.0",
                 "yiisoft/yii2": "2.0.*"
             },
@@ -2254,7 +2216,7 @@
                 "font",
                 "yii"
             ],
-            "time": "2016-04-21 11:55:25"
+            "time": "2016-05-22 20:07:51"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -2416,16 +2378,16 @@
         },
         {
             "name": "unclead/yii2-multiple-input",
-            "version": "1.2.15",
+            "version": "1.2.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/unclead/yii2-multiple-input.git",
-                "reference": "56d92b27cb60f76a42bf994230a0f66e3f918339"
+                "reference": "4b170e6e8fc81740f07b4e1ec421cc81229ef995"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/unclead/yii2-multiple-input/zipball/56d92b27cb60f76a42bf994230a0f66e3f918339",
-                "reference": "56d92b27cb60f76a42bf994230a0f66e3f918339",
+                "url": "https://api.github.com/repos/unclead/yii2-multiple-input/zipball/4b170e6e8fc81740f07b4e1ec421cc81229ef995",
+                "reference": "4b170e6e8fc81740f07b4e1ec421cc81229ef995",
                 "shasum": ""
             },
             "require": {
@@ -2457,7 +2419,7 @@
                 "yii2 multiple input",
                 "yii2 tabular input"
             ],
-            "time": "2016-05-03 09:45:21"
+            "time": "2016-05-17 15:02:07"
         },
         {
             "name": "wikimedia/composer-merge-plugin",
@@ -2514,12 +2476,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yii2tech/filedb.git",
-                "reference": "adf4610f38ae940a7abfd3a7bbb72c9b5c0cd9e6"
+                "reference": "36bac70931a006aeb09f942dba978f34be4c7c21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yii2tech/filedb/zipball/adf4610f38ae940a7abfd3a7bbb72c9b5c0cd9e6",
-                "reference": "adf4610f38ae940a7abfd3a7bbb72c9b5c0cd9e6",
+                "url": "https://api.github.com/repos/yii2tech/filedb/zipball/36bac70931a006aeb09f942dba978f34be4c7c21",
+                "reference": "36bac70931a006aeb09f942dba978f34be4c7c21",
                 "shasum": ""
             },
             "require": {
@@ -2554,7 +2516,7 @@
                 "static",
                 "yii2"
             ],
-            "time": "2016-02-19 15:06:52"
+            "time": "2016-05-23 15:11:39"
         },
         {
             "name": "yiisoft/yii2",
@@ -2562,12 +2524,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "5ed762ebf18945ef3282d0910d1a8b03603c7a7b"
+                "reference": "b37b14b8112cc981dd17adda555dca63b70154a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/5ed762ebf18945ef3282d0910d1a8b03603c7a7b",
-                "reference": "5ed762ebf18945ef3282d0910d1a8b03603c7a7b",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/b37b14b8112cc981dd17adda555dca63b70154a9",
+                "reference": "b37b14b8112cc981dd17adda555dca63b70154a9",
                 "shasum": ""
             },
             "require": {
@@ -2648,7 +2610,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2016-05-15 22:11:47"
+            "time": "2016-05-22 10:13:24"
         },
         {
             "name": "yiisoft/yii2-authclient",
@@ -2985,12 +2947,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "191fc2b648e1b00ad4725fcae0ab0729537725c8"
+                "reference": "df56110269ffaaea78295290c74d0bd1b3ac176f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/191fc2b648e1b00ad4725fcae0ab0729537725c8",
-                "reference": "191fc2b648e1b00ad4725fcae0ab0729537725c8",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/df56110269ffaaea78295290c74d0bd1b3ac176f",
+                "reference": "df56110269ffaaea78295290c74d0bd1b3ac176f",
                 "shasum": ""
             },
             "require": {
@@ -3027,7 +2989,7 @@
                 "faker",
                 "fixtures"
             ],
-            "time": "2016-05-10 09:22:13"
+            "time": "2016-05-19 20:16:37"
         },
         {
             "name": "phpdocumentor/reflection-docblock",
