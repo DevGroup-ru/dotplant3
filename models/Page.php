@@ -10,9 +10,11 @@ use Yii;
  * This is the model class for table "page".
  *
  * @property integer $id
- * @property string $name
- * @property string $slug
- * @property string $content
+ * @property string  $name
+ * @property string  $slug
+ * @property array   $content
+ * @property array   $providers
+ * @property integer $template_id
  */
 class Page extends \yii\db\ActiveRecord
 {
@@ -45,8 +47,10 @@ class Page extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'slug', 'content'], 'required'],
-            [['name', 'content'], 'string'],
+            [['template_id'], 'integer'],
+            [['name', 'slug'], 'required'],
+            [['name', 'slug'], 'string'],
+            [['content', 'providers',], 'safe',],
             [['slug'], 'string', 'max' => 80],
         ];
     }
@@ -61,6 +65,7 @@ class Page extends \yii\db\ActiveRecord
             'name' => 'Name',
             'slug' => 'Slug',
             'content' => 'Content',
+            'providers' => 'Providers',
         ];
     }
 }
