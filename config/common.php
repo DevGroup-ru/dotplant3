@@ -89,6 +89,9 @@ $config = [
         'monster' => [
             'class' => DotPlant\Monster\MonsterModule::class,
         ],
+        'multilingual' => [
+            'class' => DevGroup\Multilingual\Module::class,
+        ],
     ],
     'params' => require(__DIR__ . '/params.php'),
 ];
