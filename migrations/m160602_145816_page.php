@@ -84,6 +84,7 @@ class m160602_145816_page extends Migration
                 'packed_json_content' => 'LONGTEXT NOT NULL',
                 'packed_json_providers' => 'LONGTEXT NOT NULL',
                 'template_id' => $this->integer()->notNull()->defaultValue(0),
+                'layout_id' => $this->integer()->notNull()->defaultValue(0),
             ],
             $tableOptions
         );

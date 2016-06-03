@@ -4,6 +4,7 @@ namespace app\models;
 
 use DevGroup\TagDependencyHelper\CacheableActiveRecord;
 use DevGroup\TagDependencyHelper\TagDependencyTrait;
+use DotPlant\Monster\Universal\EntityTrait;
 use Yii;
 
 /**
@@ -19,6 +20,7 @@ use Yii;
 class Page extends \yii\db\ActiveRecord
 {
     use TagDependencyTrait;
+    use EntityTrait;
     /**
      * @inheritdoc
      */

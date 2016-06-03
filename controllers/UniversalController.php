@@ -31,16 +31,6 @@ class UniversalController extends yii\web\Controller
                         'mainEntityKey' => 'page',
                         'defaultTemplateKey' => 'example',
                     ],
-                    // deprecated!!!
-//                    [
-//                        'class' => MaterializedAttributes::class, 
-//                        'entities' => [
-//                            [
-//                                'entity' => 'page',
-//                                'attributes' => ['content',]
-//                            ],
-//                        ],
-//                    ],
                 ],
             ],
         ];
