@@ -72,6 +72,11 @@ if (YII_ENV_DEV) {
     $config['modules']['debug'] = [
         'class' => 'yii\debug\Module',
         'allowedIPs' => require(__DIR__ . DIRECTORY_SEPARATOR . 'dev-ips.php'),
+        'panels' => [
+            'monster' => [
+                'class' => 'DotPlant\Monster\Debug\MonsterPanel',
+            ]
+        ]
     ];
 }
 
