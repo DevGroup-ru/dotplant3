@@ -1,4 +1,5 @@
 <?php
+
 return [
     1 => [
         'id' => 1,
@@ -10,6 +11,8 @@ return [
         'domain' => 'dotplant3.dev',
         'folder' => 'en',
         'yii_language' => 'en-US',
+        'context_id' => 1,
+        'sort_order' => 1,
     ],
     2 => [
         'id' => 2,
@@ -21,5 +24,7 @@ return [
         'domain' => 'dotplant3.dev',
         'folder' => 'ru',
         'yii_language' => 'ru',
+        'context_id' => 1,
+        'sort_order' => 2,
     ],
 ];

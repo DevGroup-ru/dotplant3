@@ -20,12 +20,12 @@ $config = [
         'mailer' => require(__DIR__ . DIRECTORY_SEPARATOR . 'mailer.php'),
 
         'mutex' => [
-            'class' => 'yii\mutex\MysqlMutex',
+            'class' => yii\mutex\MysqlMutex::class,
             'autoRelease' => false,
         ],
 
         'urlManager' => [
-            'class' => \DevGroup\Multilingual\components\UrlManager::className(),
+            'class' => DevGroup\Multilingual\components\UrlManager::className(),
             'excludeRoutes' => [
                 'newsletter/index',
                 'newsletter/test',
@@ -42,24 +42,23 @@ $config = [
             'hostInfo' => 'http://dotplant3.dev',
         ],
         'monsterRepository' => [
-            'class' => 'DotPlant\Monster\Repository',
+            'class' => DotPlant\Monster\Repository::class,
         ],
         'monsterCache' => [
-            'class' => 'DotPlant\Monster\Cache',
+            'class' => DotPlant\Monster\Cache::class,
         ],
         'monsterBh' => [
-            'class' => 'DotPlant\Monster\MonsterBh',
+            'class' => DotPlant\Monster\MonsterBh::class,
             'expander' => 'monsterBhExpander',
         ],
         'monsterBhExpander' => [
-            'class' => 'DotPlant\Monster\MonsterBhExpander',
+            'class' => DotPlant\Monster\MonsterBhExpander::class,
         ],
         'multilingual' => [
-            'class' => \DevGroup\Multilingual\Multilingual::className(),
-            'default_language_id' => 1,
+            'class' => DevGroup\Multilingual\Multilingual::class,
             'handlers' => [
                 [
-                    'class' => \DevGroup\Multilingual\DefaultGeoProvider::className(),
+                    'class' => DevGroup\Multilingual\DefaultGeoProvider::class,
                     'default' => [
                         'country' => [
                             'name' => 'Russia',
@@ -70,25 +69,28 @@ $config = [
             ],
         ],
         'authManager' => [
-            'class' => 'yii\rbac\DbManager',
+            'class' => yii\rbac\DbManager::class,
         ],
 
     ],
     'modules' => [
         'properties' => [
-            'class' => 'DevGroup\DataStructure\Properties\Module',
+            'class' => DevGroup\DataStructure\Properties\Module::class,
         ],
         'adminUtils' => [
-            'class' => 'DevGroup\AdminUtils\AdminModule',
+            'class' => DevGroup\AdminUtils\AdminModule::class,
         ],
         'extensions-manager' => [
-            'class' => 'DevGroup\ExtensionsManager\ExtensionsManager',
+            'class' => DevGroup\ExtensionsManager\ExtensionsManager::class,
         ],
         'users' => [
-            'class' => 'DevGroup\Users\UsersModule',
+            'class' => DevGroup\Users\UsersModule::class,
         ],
         'monster' => [
-            'class' => 'DotPlant\Monster\MonsterModule',
+            'class' => DotPlant\Monster\MonsterModule::class,
+        ],
+        'multilingual' => [
+            'class' => DevGroup\Multilingual\Module::class,
         ],
     ],
     'params' => require(__DIR__ . '/params.php'),
