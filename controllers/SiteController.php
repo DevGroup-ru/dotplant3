@@ -5,16 +5,14 @@ namespace app\controllers;
 use DevGroup\DeferredTasks\actions\ReportQueueItem;
 use DevGroup\DeferredTasks\helpers\DeferredHelper;
 use DevGroup\DeferredTasks\helpers\ReportingTask;
-use DotPlant\Monster\bem\MonsterGroup;
-use DotPlant\Monster\bem\MonsterVariable;
+use DevGroup\Frontend\controllers\FrontendController;
 use DotPlant\Monster\Repository;
 use yii;
 use yii\helpers\VarDumper;
-use yii\web\Controller;
 use yii\web\Response;
 use yii\web\ServerErrorHttpException;
 
-class SiteController extends Controller
+class SiteController extends FrontendController
 {
 
     public function actions()
@@ -121,4 +119,5 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+
 }

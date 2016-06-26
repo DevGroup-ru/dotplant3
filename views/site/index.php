@@ -42,15 +42,6 @@ $this->title = 'Главная страница';
 }
 */
 
-echo \DotPlant\Monster\MonsterContent::widget([
-    'uniqueContentId' => 'site-index',
-//    'data' => ['user' => 'Василий Иванович Пупкин'],
-    'materials' => [
-        [
-            'material' => 'core.frontend-monster.content-blocks.content-block-001',
-        ],
-
-    ],
-]);
-
-
+echo Html::a("Test page 1", ['/universal/show', 'entities' => [
+    'app\models\Page' => [1],
+]]);

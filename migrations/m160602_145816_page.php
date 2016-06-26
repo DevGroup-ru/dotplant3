@@ -22,7 +22,7 @@ class m160602_145816_page extends Migration
                         'class' => StaticContentProvider::class,
                         'entities' => [
                             'best' => [
-                                0 => [
+                                't001' => [
                                     'title' => 'BEST company EVER',
                                     'blocks' => [
                                         [
@@ -57,7 +57,7 @@ class m160602_145816_page extends Migration
                 'key' => 'best',
                 'entity_dependent' => 0,
                 'packed_json_content' => json_encode([
-                    [
+                    't001' => [
                         'material' => 'core.frontend-monster.content-blocks.content-block-001',
                     ],
                 ]),
@@ -96,10 +96,10 @@ class m160602_145816_page extends Migration
                 'template_id' => $templateId,
                 'packed_json_content' => json_encode([
                     'content' => [
-                        [
+                        'p01' => [
                             'material' => 'core.frontend-monster.content-blocks.content-block-001',
                         ],
-                        [
+                        'p02' => [
                             'material' => 'core.frontend-monster.content-blocks.content-block-002',
                         ],
                     ],
@@ -109,11 +109,11 @@ class m160602_145816_page extends Migration
                         'class' => StaticContentProvider::class,
                         'entities' => [
                             'content' => [
-                                0 => [
+                                'p01' => [
                                     'title' => 'First block title',
                                     'blocks' => [],
                                 ],
-                                1 => [
+                                'p02' => [
                                     'title' => 'Second block',
                                     'blocks' => [
                                         [

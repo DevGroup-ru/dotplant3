@@ -2,13 +2,13 @@
 
 namespace app\controllers;
 
+use DevGroup\Frontend\controllers\FrontendController;
 use DevGroup\Frontend\Universal\Core\FillEntities;
 use DevGroup\Frontend\Universal\SuperAction;
 use DotPlant\Monster\Universal\MainEntity;
-use DotPlant\Monster\Universal\MaterializedAttributes;
 use yii;
 
-class UniversalController extends yii\web\Controller
+class UniversalController extends FrontendController
 {
     public function actions()
     {
