@@ -3,10 +3,11 @@
 $config = [
     'adminEmail' => 'admin@example.com',
     'yii.migrations' => [
-        '@dataStructure/migrations/',
+        '@vendor/devgroup/yii2-data-structure-tools/src/migrations/',
         '@yii/rbac/migrations/',
         '@vendor/devgroup/yii2-deferred-tasks/src/migrations/',
         '@vendor/devgroup/yii2-users-module/src/migrations/',
+        '@vendor/dotplant/monster/src/migrations'
 
     ],
     'icon-framework' => 'fa',
