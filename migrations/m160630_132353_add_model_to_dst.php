@@ -13,9 +13,7 @@ class m160630_132353_add_model_to_dst extends Migration
 
     public function down()
     {
-        echo "m160630_132353_add_model_to_dst cannot be reverted.\n";
-
-        return false;
+        PropertiesTableGenerator::getInstance()->drop(Page::class);
     }
 
     /*
