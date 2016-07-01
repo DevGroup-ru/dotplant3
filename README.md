@@ -8,7 +8,7 @@ Installation
 
 1. Clone a project `git clone git@github.com:DevGroup-ru/dotplant3.git`
 2. Go to an application directory `cd dotplant3`
-3. Run an installing of composer packages`/usr/bin/php composer.phar install`
+3. Run an installing of composer packages `/usr/bin/php composer.phar install`
 4. Modify a configs
     * Create a local db config `touch config/db-local.php` and set your connection parameters. It looks like 
     ```php
