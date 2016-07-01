@@ -8,17 +8,7 @@ $config = [
     'components' => [
         'assetManager' => [
             'appendTimestamp' => true,
-            'bundles' => [
-                'yii\web\JqueryAsset' => [
-                    'sourcePath' => null,   // do not publish the bundle
-                    'js' => [
-                        '//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js',
-                    ],
-                    'jsOptions' => [
-                        'position' => \yii\web\View::POS_HEAD,
-                    ],
-                ],
-            ],
+            'bundles' => require('core.assetbundles.php'),
             'linkAssets' => true,
         ],
         'request' => [

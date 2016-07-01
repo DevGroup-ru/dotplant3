@@ -661,7 +661,15 @@ ServerSignature Off
 # ----------------------------------------------------------------------
 # | Compression                                                        |
 # ----------------------------------------------------------------------
-
+<IfModule mod_gzip.c>
+      mod_gzip_on                   Yes
+      mod_gzip_item_include         file       \.js$
+      mod_gzip_item_include         file       \.css$
+      mod_gzip_item_include mime ^text/.*
+      mod_gzip_item_include mime ^application/x-javascript.*
+      mod_gzip_item_include file .(html?|txt|css|js|php|pl)$
+      mod_gzip_dechunk Yes
+</IfModule>
 <IfModule mod_deflate.c>
 
     # Force compression for mangled `Accept-Encoding` request headers

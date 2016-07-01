@@ -12,7 +12,6 @@
     "minimum-stability": "dev",
     "require": {
         "devgroup/dotplant": "dev-master",
-        "fxp/composer-asset-plugin": "~1.1.1",
         "devgroup/yii2-users-module": "dev-master",
         "wikimedia/composer-merge-plugin": "^1.3",
         "symfony/finder": "^3.0",
@@ -49,11 +48,22 @@
       "asset-installer-paths": {
         "npm-asset-library": "vendor/npm",
         "bower-asset-library": "vendor/bower"
-    },
+      },
       "merge-plugin": {
         "include": [
           "extensions/composer.json"
         ]
       }
-    }
+    },
+    "provide": {
+      "bower-asset/jquery": "*",
+      "bower-asset/jquery.inputmask": "*",
+      "bower-asset/jquery-ui": "*"
+    },
+    "repositories": [
+      {
+        "type": "composer",
+        "url": "https://asset-packagist.org"
+      }
+    ]
 }
