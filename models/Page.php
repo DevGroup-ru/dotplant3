@@ -2,10 +2,12 @@
 
 namespace app\models;
 
+use DevGroup\DataStructure\traits\PropertiesTrait;
 use DevGroup\TagDependencyHelper\CacheableActiveRecord;
 use DevGroup\TagDependencyHelper\TagDependencyTrait;
 use DotPlant\Monster\Universal\EntityTrait;
 use Yii;
+use yii\helpers\ArrayHelper;
 
 /**
  * This is the model class for table "page".
@@ -21,12 +23,18 @@ class Page extends \yii\db\ActiveRecord
 {
     use TagDependencyTrait;
     use EntityTrait;
+    use PropertiesTrait;
     /**
      * @inheritdoc
      */
     public function behaviors()
     {
         return [
+            // other behaviors
+            'properties' => [
+                'class' => '\DevGroup\DataStructure\behaviors\HasProperties',
+                'autoFetchProperties' => true,
+            ],
             'CacheableActiveRecord' => [
                 'class' => CacheableActiveRecord::className(),
             ],
@@ -48,13 +56,16 @@ class Page extends \yii\db\ActiveRecord
      */
     public function rules()
     {
-        return [
-            [['template_id'], 'integer'],
-            [['name', 'slug'], 'required'],
-            [['name', 'slug'], 'string'],
-            [['content', 'providers',], 'safe',],
-            [['slug'], 'string', 'max' => 80],
-        ];
+        return ArrayHelper::merge(
+            [
+                [['template_id'], 'integer'],
+                [['name', 'slug'], 'required'],
+                [['name', 'slug'], 'string'],
+                [['content', 'providers',], 'safe',],
+                [['slug'], 'string', 'max' => 80],
+            ],
+            $this->propertiesRules()
+        );
     }
 
     /**
