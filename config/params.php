@@ -3,11 +3,10 @@
 $config = [
     'adminEmail' => 'admin@example.com',
     'yii.migrations' => [
-        '@dataStructure/migrations/',
         '@yii/rbac/migrations/',
-        '@vendor/devgroup/yii2-deferred-tasks/src/migrations/',
-        '@vendor/devgroup/yii2-users-module/src/migrations/',
-
+        '@DevGroup/DataStructure/migrations/',
+        '@DevGroup/DeferredTasks/migrations/',
+        '@DevGroup/Users/migrations/',
     ],
     'icon-framework' => 'fa',
     'PolyglotTranslationPath' => '@app/messages/polyglot.js',
