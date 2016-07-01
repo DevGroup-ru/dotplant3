@@ -1429,12 +1429,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/DevGroup-ru/dotplant-monster.git",
-                "reference": "222d9f95a73025a9a0339576b8c175d2bf350ad1"
+                "reference": "5c3b24a391d3a6651af683ee32e3c42530f6f1f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DevGroup-ru/dotplant-monster/zipball/222d9f95a73025a9a0339576b8c175d2bf350ad1",
-                "reference": "222d9f95a73025a9a0339576b8c175d2bf350ad1",
+                "url": "https://api.github.com/repos/DevGroup-ru/dotplant-monster/zipball/5c3b24a391d3a6651af683ee32e3c42530f6f1f7",
+                "reference": "5c3b24a391d3a6651af683ee32e3c42530f6f1f7",
                 "shasum": ""
             },
             "require": {
@@ -1479,7 +1479,7 @@
                 }
             ],
             "description": "Here be monsters",
-            "time": "2016-06-27 08:07:51"
+            "time": "2016-07-01 08:53:51"
         },
         {
             "name": "elasticsearch/elasticsearch",
@@ -2683,12 +2683,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "a826ef502f2e743869e939fc481158f6bfb0d169"
+                "reference": "14f713b30deee5e0bebfea846cb3a7858ccb39a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/a826ef502f2e743869e939fc481158f6bfb0d169",
-                "reference": "a826ef502f2e743869e939fc481158f6bfb0d169",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/14f713b30deee5e0bebfea846cb3a7858ccb39a7",
+                "reference": "14f713b30deee5e0bebfea846cb3a7858ccb39a7",
                 "shasum": ""
             },
             "require": {
@@ -2769,7 +2769,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2016-06-30 08:47:21"
+            "time": "2016-07-01 08:16:01"
         },
         {
             "name": "yiisoft/yii2-authclient",
@@ -3106,12 +3106,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "f23e41880c6dd611a125bca584c95a60214bfe48"
+                "reference": "6b7ebbb6608e14326959f9f6cdd290dc3a4454ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/f23e41880c6dd611a125bca584c95a60214bfe48",
-                "reference": "f23e41880c6dd611a125bca584c95a60214bfe48",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/6b7ebbb6608e14326959f9f6cdd290dc3a4454ed",
+                "reference": "6b7ebbb6608e14326959f9f6cdd290dc3a4454ed",
                 "shasum": ""
             },
             "require": {
@@ -3148,7 +3148,7 @@
                 "faker",
                 "fixtures"
             ],
-            "time": "2016-06-30 12:51:34"
+            "time": "2016-07-01 08:54:08"
         },
         {
             "name": "phpdocumentor/reflection-common",
