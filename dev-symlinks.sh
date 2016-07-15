@@ -8,6 +8,8 @@ yii2-intent-analytics
 yii2-data-structure-tools
 yii2-frontend-utils
 yii2-extensions-manager
+yii2-tag-dependency-helper
+yii2-entity
 yii2-users-module'
 
 CURRENT_DIRECTORY=`pwd`
