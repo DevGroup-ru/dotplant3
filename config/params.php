@@ -8,7 +8,7 @@ $config = [
         '@DevGroup/DeferredTasks/migrations/',
         '@DevGroup/Users/migrations/',
         '@DotPlant/Monster/migrations/',
-        '@DevGroup/MediaStorage/src/migrations/',
+        '@DevGroup/MediaStorage/migrations/',
 
     ],
     'icon-framework' => 'fa',
