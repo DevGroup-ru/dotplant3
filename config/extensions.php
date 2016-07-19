@@ -91,12 +91,6 @@ return[
         'is_active' => 0,
         'is_core' => 0,
     ],
-    'yiisoft/yii2-elasticsearch' => [
-        'composer_name' => 'yiisoft/yii2-elasticsearch',
-        'composer_type' => 'yii2-extension',
-        'is_active' => 0,
-        'is_core' => 0,
-    ],
     'yiisoft/yii2-authclient' => [
         'composer_name' => 'yiisoft/yii2-authclient',
         'composer_type' => 'yii2-extension',
@@ -125,12 +119,6 @@ return[
         'composer_name' => 'yiisoft/yii2-codeception',
         'composer_type' => 'yii2-extension',
         'is_active' => 0,
-        'is_core' => 0,
-    ],
-    'yiisoft/yii2-twig' => [
-        'composer_name' => 'yiisoft/yii2-twig',
-        'composer_type' => 'yii2-extension',
-        'is_active' => 1,
         'is_core' => 0,
     ],
     'devgroup/yii2-polyglot' => [
@@ -185,6 +173,72 @@ return[
         'composer_name' => 'devgroup/yii2-frontend-utils',
         'composer_type' => 'yii2-extension',
         'is_active' => 1,
+        'is_core' => 0,
+    ],
+    'devgroup/yii2-jsoneditor' => [
+        'composer_name' => 'devgroup/yii2-jsoneditor',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 0,
+        'is_core' => 0,
+    ],
+    'vova07/yii2-imperavi-widget' => [
+        'composer_name' => 'vova07/yii2-imperavi-widget',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 0,
+        'is_core' => 0,
+    ],
+    'devgroup/yii2-entity' => [
+        'composer_name' => 'devgroup/yii2-entity',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 0,
+        'is_core' => 0,
+    ],
+    'yiisoft/yii2-httpclient' => [
+        'composer_name' => 'yiisoft/yii2-httpclient',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 0,
+        'is_core' => 0,
+    ],
+    'kartik-v/yii2-widget-colorinput' => [
+        'composer_name' => 'kartik-v/yii2-widget-colorinput',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 0,
+        'is_core' => 0,
+    ],
+    'creocoder/yii2-flysystem' => [
+        'composer_name' => 'creocoder/yii2-flysystem',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 0,
+        'is_core' => 0,
+    ],
+    'mihaildev/yii2-elfinder' => [
+        'composer_name' => 'mihaildev/yii2-elfinder',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 0,
+        'is_core' => 0,
+    ],
+    '2amigos/yii2-transliterator-helper' => [
+        'composer_name' => '2amigos/yii2-transliterator-helper',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 0,
+        'is_core' => 0,
+    ],
+    'yiisoft/yii2-imagine' => [
+        'composer_name' => 'yiisoft/yii2-imagine',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 0,
+        'is_core' => 0,
+    ],
+    'devgroup/yii2-media-storage' => [
+        'composer_name' => 'devgroup/yii2-media-storage',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 1,
+        'is_core' => 0,
+    ],
+    'dotplant/monster' => [
+        'composer_name' => 'dotplant/monster',
+        'composer_type' => 'yii2-extension',
+        'is_active' => 0,
         'is_core' => 0,
     ],
 ];

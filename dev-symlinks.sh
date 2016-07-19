@@ -10,7 +10,8 @@ yii2-frontend-utils
 yii2-extensions-manager
 yii2-tag-dependency-helper
 yii2-entity
-yii2-users-module'
+yii2-users-module
+yii2-media-storage'
 
 CURRENT_DIRECTORY=`pwd`
 
