@@ -96,6 +96,9 @@ $config = [
         'multilingual' => [
             'class' => DevGroup\Multilingual\Module::class,
         ],
+        'events' => [
+            'class' => DevGroup\EventsSystem\Module::class,
+        ],
     ],
     'params' => require(__DIR__ . '/params.php'),
 ];

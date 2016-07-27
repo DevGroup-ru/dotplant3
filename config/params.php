@@ -8,6 +8,7 @@ $config = [
         '@DevGroup/DeferredTasks/migrations/',
         '@DevGroup/Users/migrations/',
         '@DotPlant/Monster/migrations/',
+        '@DevGroup/EventsSystem/migrations',
     ],
     'icon-framework' => 'fa',
     'PolyglotTranslationPath' => '@app/messages/polyglot.js',
