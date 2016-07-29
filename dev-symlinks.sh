@@ -10,31 +10,34 @@ yii2-frontend-utils
 yii2-extensions-manager
 yii2-tag-dependency-helper
 yii2-entity
+yii2-events-system
+yii2-jsoneditor
+yii2-measure
 yii2-users-module'
 
 CURRENT_DIRECTORY=`pwd`
 
-for Package in $PACKAGES
+for Package in ${PACKAGES}
 do
-    cd ../$Package
+    cd ../${Package}
     echo "Updating git $Package"
     git pull
 
 done
 
-cd $CURRENT_DIRECTORY
+cd ${CURRENT_DIRECTORY}
 
-for Package in $PACKAGES
+for Package in ${PACKAGES}
 do
-    rm -rf vendor/devgroup/$Package
+    rm -rf vendor/devgroup/${Package}
 done
 
 composer update
 
-for Package in $PACKAGES
+for Package in ${PACKAGES}
 do
-    rm -rf vendor/devgroup/$Package
-    ln -s ../../../$Package vendor/devgroup/
+    rm -rf vendor/devgroup/${Package}
+    ln -s ../../../${Package} vendor/devgroup/
 done
 
 rm -rf vendor/devgroup/bh
