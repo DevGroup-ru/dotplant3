@@ -12,6 +12,7 @@ yii2-tag-dependency-helper
 yii2-entity
 yii2-events-system
 yii2-jsoneditor
+yii2-media-storage
 yii2-measure
 yii2-users-module'
 
