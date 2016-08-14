@@ -259,5 +259,11 @@ return[
         'is_active' => 1,
         'is_core' => 0,
     ],
+    'dotplant/entity-structure' => [
+        'composer_name' => 'dotplant/entity-structure',
+        'composer_type' => 'dotplant-extension',
+        'is_active' => 0,
+        'is_core' => 0,
+    ],
 ];
 

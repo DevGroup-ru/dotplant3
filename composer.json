@@ -16,7 +16,8 @@
         "wikimedia/composer-merge-plugin": "^1.3",
         "symfony/finder": "^3.0",
         "devgroup/yii2-data-structure-tools": "dev-master",
-        "devgroup/yii2-events-system": "dev-master"
+        "devgroup/yii2-events-system": "dev-master",
+        "dotplant/entity-structure": "dev-master"
     },
     "require-dev": {
         "devgroup/dotplant-dev": "dev-master"
