@@ -276,6 +276,22 @@
             "type": "library"
         },
         {
+            "name": "bower-asset/jstree",
+            "version": "9999999-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vakata/jstree.git",
+                "reference": "d567bbf97ba7dafe1eccc4d1da86909bf3a88f86"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vakata/jstree/zipball/d567bbf97ba7dafe1eccc4d1da86909bf3a88f86",
+                "reference": "d567bbf97ba7dafe1eccc4d1da86909bf3a88f86",
+                "shasum": null
+            },
+            "type": "library"
+        },
+        {
             "name": "bower-asset/polyglot",
             "version": "0.4.5.0",
             "source": {
@@ -432,12 +448,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/lipis/flag-icon-css.git",
-                "reference": "400a55f50f62017443a31c6fa7e7fa300f4648e1"
+                "reference": "9ad0d8397793c135ad85424903b4950ca2cfa226"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lipis/flag-icon-css/zipball/400a55f50f62017443a31c6fa7e7fa300f4648e1",
-                "reference": "400a55f50f62017443a31c6fa7e7fa300f4648e1",
+                "url": "https://api.github.com/repos/lipis/flag-icon-css/zipball/9ad0d8397793c135ad85424903b4950ca2cfa226",
+                "reference": "9ad0d8397793c135ad85424903b4950ca2cfa226",
                 "shasum": ""
             },
             "type": "component",
@@ -462,7 +478,7 @@
                 }
             ],
             "description": "CSS for vector based country flags",
-            "time": "2016-08-09 16:52:44"
+            "time": "2016-08-14 20:21:13"
         },
         {
             "name": "creocoder/yii2-flysystem",
@@ -934,12 +950,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/DevGroup-ru/yii2-extensions-manager.git",
-                "reference": "47d74d3bc2b79eea223a868c1373ee408e236960"
+                "reference": "5c4b268b2db9775ec0df384f60a5916f59164355"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DevGroup-ru/yii2-extensions-manager/zipball/47d74d3bc2b79eea223a868c1373ee408e236960",
-                "reference": "47d74d3bc2b79eea223a868c1373ee408e236960",
+                "url": "https://api.github.com/repos/DevGroup-ru/yii2-extensions-manager/zipball/5c4b268b2db9775ec0df384f60a5916f59164355",
+                "reference": "5c4b268b2db9775ec0df384f60a5916f59164355",
                 "shasum": ""
             },
             "require": {
@@ -996,7 +1012,7 @@
                 "plugins",
                 "yii2"
             ],
-            "time": "2016-08-14 12:11:02"
+            "time": "2016-08-15 05:50:18"
         },
         {
             "name": "devgroup/yii2-frontend-utils",
@@ -1170,6 +1186,63 @@
                 "yii2"
             ],
             "time": "2014-12-16 14:27:06"
+        },
+        {
+            "name": "devgroup/yii2-jstree-widget",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DevGroup-ru/yii2-jstree-widget.git",
+                "reference": "8481d9dab9431fda2d59111a7cb1db8a9c4543b2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DevGroup-ru/yii2-jstree-widget/zipball/8481d9dab9431fda2d59111a7cb1db8a9c4543b2",
+                "reference": "8481d9dab9431fda2d59111a7cb1db8a9c4543b2",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/jstree": "*",
+                "devgroup/yii2-tag-dependency-helper": "~1.4.0",
+                "yiisoft/yii2": "~2.0.0"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "devgroup\\JsTreeWidget\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander Kozhevnikov",
+                    "email": "b37hr3z3n@gmail.com"
+                },
+                {
+                    "name": "Evgeny Dubovitsky",
+                    "email": "flynn068@gmail.com"
+                },
+                {
+                    "name": "Pavel Fedotov",
+                    "email": "fps.06@mail.ru"
+                },
+                {
+                    "name": "Pavel Naumov",
+                    "email": "huggbies@email.su"
+                }
+            ],
+            "description": "jsTree widget for yii2",
+            "keywords": [
+                "jstree",
+                "nested-sets",
+                "tree",
+                "widget",
+                "yii2"
+            ],
+            "time": "2016-08-11 11:27:10"
         },
         {
             "name": "devgroup/yii2-measure",
@@ -1686,21 +1759,95 @@
             "time": "2016-05-12 17:23:41"
         },
         {
+            "name": "dotplant/content",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DevGroup-ru/dotplant-content.git",
+                "reference": "cd39952ef1c9e33970c57cb3ef8ddf31814b6acc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DevGroup-ru/dotplant-content/zipball/cd39952ef1c9e33970c57cb3ef8ddf31814b6acc",
+                "reference": "cd39952ef1c9e33970c57cb3ef8ddf31814b6acc",
+                "shasum": ""
+            },
+            "require": {
+                "devgroup/yii2-data-structure-tools": "*",
+                "devgroup/yii2-entity": "dev-master",
+                "devgroup/yii2-jstree-widget": "dev-master",
+                "devgroup/yii2-tag-dependency-helper": "~1.4",
+                "dotplant/entity-structure": "dev-master",
+                "kartik-v/yii2-widget-select2": "@dev",
+                "kartik-v/yii2-widget-switchinput": "*",
+                "php": ">=5.5.0",
+                "yiisoft/yii2": "~2.0.0"
+            },
+            "require-dev": {
+                "codeception/codeception": "^2.2",
+                "yiisoft/yii2-codeception": "~2.0.0"
+            },
+            "type": "dotplant-extension",
+            "extra": {
+                "yii2-extension": {
+                    "name": "DotPlant Content",
+                    "name_ru": "DotPlant Контент",
+                    "iconUrl": "",
+                    "description_ru": "Расширение для работы со страницами, контентными блоками и прочими контентными вещами в DotPlant3 CMS"
+                },
+                "migrationPath": [
+                    "src/migrations"
+                ],
+                "configurables": "src/configurables.php",
+                "translationCategory": "dotplant.content"
+            },
+            "autoload": {
+                "psr-4": {
+                    "DotPlant\\Content\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pavel Fedotov",
+                    "email": "fps.06@mail.ru"
+                },
+                {
+                    "name": "Pavel Naumov",
+                    "email": "huggbies@email.su"
+                }
+            ],
+            "description": "The extension for DotPlant3 with pages, content blocks, etc.",
+            "keywords": [
+                "block",
+                "content",
+                "content block",
+                "dotplant",
+                "extension",
+                "page",
+                "yii2"
+            ],
+            "time": "2016-08-16 11:08:47"
+        },
+        {
             "name": "dotplant/entity-structure",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/DevGroup-ru/dotplant-entity-structure.git",
-                "reference": "a8bba9e852a98710fc7c2cea57f2890895696be9"
+                "reference": "4a0cafc5b1d6c1ff37b0229b391012c95fc2ed71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DevGroup-ru/dotplant-entity-structure/zipball/a8bba9e852a98710fc7c2cea57f2890895696be9",
-                "reference": "a8bba9e852a98710fc7c2cea57f2890895696be9",
+                "url": "https://api.github.com/repos/DevGroup-ru/dotplant-entity-structure/zipball/4a0cafc5b1d6c1ff37b0229b391012c95fc2ed71",
+                "reference": "4a0cafc5b1d6c1ff37b0229b391012c95fc2ed71",
                 "shasum": ""
             },
             "require": {
-                "devgroup/dotplant": "dev-master",
+                "devgroup/yii2-admin-utils": "dev-master",
                 "devgroup/yii2-data-structure-tools": "*",
                 "devgroup/yii2-entity": "*",
                 "devgroup/yii2-multilingual": "*",
@@ -1747,7 +1894,7 @@
                 "structure",
                 "yii2"
             ],
-            "time": "2016-08-14 11:52:21"
+            "time": "2016-08-16 08:17:01"
         },
         {
             "name": "dotplant/monster",
@@ -2586,6 +2733,56 @@
             "time": "2016-08-07 04:51:06"
         },
         {
+            "name": "kartik-v/yii2-widget-switchinput",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-widget-switchinput.git",
+                "reference": "7d8ee999d79bcdc1601da5cd59439ac7eb1f5ea6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-switchinput/zipball/7d8ee999d79bcdc1601da5cd59439ac7eb1f5ea6",
+                "reference": "7d8ee999d79bcdc1601da5cd59439ac7eb1f5ea6",
+                "shasum": ""
+            },
+            "require": {
+                "kartik-v/yii2-krajee-base": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "kartik\\switchinput\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD 3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "A Yii2 wrapper widget for the Bootstrap Switch plugin to use checkboxes & radios as toggle switchinputes (sub repo split from yii2-widgets)",
+            "homepage": "https://github.com/kartik-v/yii2-widget-switchinput",
+            "keywords": [
+                "bootstrap",
+                "extension",
+                "form",
+                "input",
+                "jquery",
+                "plugin",
+                "switchinput",
+                "toggle",
+                "widget",
+                "yii2"
+            ],
+            "time": "2016-01-10 16:47:35"
+        },
+        {
             "name": "knplabs/packagist-api",
             "version": "dev-master",
             "source": {
@@ -3220,12 +3417,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Studio-42/elFinder.git",
-                "reference": "719a8a0010fe283351372c8af987c1326706a70e"
+                "reference": "6961a10ee6dbc49f174920dd16df54769f5ea0be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Studio-42/elFinder/zipball/719a8a0010fe283351372c8af987c1326706a70e",
-                "reference": "719a8a0010fe283351372c8af987c1326706a70e",
+                "url": "https://api.github.com/repos/Studio-42/elFinder/zipball/6961a10ee6dbc49f174920dd16df54769f5ea0be",
+                "reference": "6961a10ee6dbc49f174920dd16df54769f5ea0be",
                 "shasum": ""
             },
             "require": {
@@ -3270,7 +3467,7 @@
             ],
             "description": "File manager for web",
             "homepage": "http://elfinder.org",
-            "time": "2016-08-13 06:18:51"
+            "time": "2016-08-15 13:19:02"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -3640,12 +3837,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "15d0866f5802020c2c048b66bbff61ce693de601"
+                "reference": "6282868b9a6c785511d4be44d8b801ef3d606d2a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/15d0866f5802020c2c048b66bbff61ce693de601",
-                "reference": "15d0866f5802020c2c048b66bbff61ce693de601",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/6282868b9a6c785511d4be44d8b801ef3d606d2a",
+                "reference": "6282868b9a6c785511d4be44d8b801ef3d606d2a",
                 "shasum": ""
             },
             "require": {
@@ -3726,7 +3923,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2016-08-12 14:55:43"
+            "time": "2016-08-16 07:15:21"
         },
         {
             "name": "yiisoft/yii2-authclient",
@@ -5350,12 +5547,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozart/assert.git",
-                "reference": "61e225b1e1084b7a0e5a51ad8eafd4c0bf16307a"
+                "reference": "0a64afb2cfaf22a36bb4c917849cdee2d008f26a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/61e225b1e1084b7a0e5a51ad8eafd4c0bf16307a",
-                "reference": "61e225b1e1084b7a0e5a51ad8eafd4c0bf16307a",
+                "url": "https://api.github.com/repos/webmozart/assert/zipball/0a64afb2cfaf22a36bb4c917849cdee2d008f26a",
+                "reference": "0a64afb2cfaf22a36bb4c917849cdee2d008f26a",
                 "shasum": ""
             },
             "require": {
@@ -5392,7 +5589,7 @@
                 "check",
                 "validate"
             ],
-            "time": "2016-08-11 10:52:21"
+            "time": "2016-08-15 15:30:25"
         },
         {
             "name": "yiisoft/yii2-codeception",
@@ -5595,7 +5792,8 @@
         "devgroup/yii2-data-structure-tools": 20,
         "devgroup/yii2-events-system": 20,
         "dotplant/entity-structure": 20,
-        "devgroup/dotplant-dev": 20
+        "devgroup/dotplant-dev": 20,
+        "dotplant/content": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
