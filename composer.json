@@ -27,10 +27,8 @@
       "store-auths": true
     },
     "scripts": {
-      "post-create-project-cmd": [
-        "yii\\composer\\Installer::postCreateProject"
-      ],
       "post-install-cmd": [
+        "yii\\composer\\Installer::postCreateProject",
         "DevGroup\\ExtensionsManager\\Installer::createComposerFile"
       ]
     },
