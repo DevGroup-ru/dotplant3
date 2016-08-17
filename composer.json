@@ -13,7 +13,6 @@
     "require": {
         "devgroup/dotplant": "dev-master",
         "devgroup/yii2-users-module": "dev-master",
-        "wikimedia/composer-merge-plugin": "^1.3",
         "symfony/finder": "^3.0",
         "devgroup/yii2-data-structure-tools": "dev-master",
         "devgroup/yii2-events-system": "dev-master",
@@ -30,6 +29,9 @@
     "scripts": {
       "post-create-project-cmd": [
         "yii\\composer\\Installer::postCreateProject"
+      ],
+      "post-install-cmd": [
+        "DevGroup\\ExtensionsManager\\Installer::createComposerFile"
       ]
     },
     "extra": {
@@ -50,11 +52,6 @@
       "asset-installer-paths": {
         "npm-asset-library": "vendor/npm",
         "bower-asset-library": "vendor/bower"
-      },
-      "merge-plugin": {
-        "include": [
-          "extensions/composer.json"
-        ]
       }
     },
     "provide": {
