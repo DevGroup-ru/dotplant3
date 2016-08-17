@@ -28,6 +28,7 @@
     },
     "scripts": {
       "post-install-cmd": [
+        "app\\Installer::createLocalConfigs",
         "yii\\composer\\Installer::postCreateProject",
         "DevGroup\\ExtensionsManager\\Installer::createComposerFile"
       ]
@@ -44,7 +45,7 @@
           }
         ],
         "generateCookieValidationKey": [
-          "config/web.php"
+          "config/web-local.php"
         ]
       },
       "asset-installer-paths": {
@@ -62,5 +63,10 @@
         "type": "composer",
         "url": "https://asset-packagist.org"
       }
-    ]
+    ],
+  "autoload": {
+    "psr-4": {
+      "app\\": "./"
+    }
+  }
 }

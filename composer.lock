@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7f698e680b22d87e9a1d82e7a5d34feb",
-    "content-hash": "7467309cb62624ecd1b775b2129f067f",
+    "hash": "4d260da63b213a542bdbcdd435e429f5",
+    "content-hash": "d10a12cb0ede5f72a47330c7bdcd0674",
     "packages": [
         {
             "name": "2amigos/yii2-transliterator-helper",
@@ -934,12 +934,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/DevGroup-ru/yii2-extensions-manager.git",
-                "reference": "d3b7a2fe9ce10f8af607c86870bb459b196092f5"
+                "reference": "750d6ca87c0605c2653e4bd8e8ac902bc3bfd8f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DevGroup-ru/yii2-extensions-manager/zipball/d3b7a2fe9ce10f8af607c86870bb459b196092f5",
-                "reference": "d3b7a2fe9ce10f8af607c86870bb459b196092f5",
+                "url": "https://api.github.com/repos/DevGroup-ru/yii2-extensions-manager/zipball/750d6ca87c0605c2653e4bd8e8ac902bc3bfd8f4",
+                "reference": "750d6ca87c0605c2653e4bd8e8ac902bc3bfd8f4",
                 "shasum": ""
             },
             "require": {
@@ -997,7 +997,7 @@
                 "plugins",
                 "yii2"
             ],
-            "time": "2016-08-17 09:39:05"
+            "time": "2016-08-17 10:10:42"
         },
         {
             "name": "devgroup/yii2-frontend-utils",
@@ -1061,12 +1061,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/DevGroup-ru/yii2-intent-analytics.git",
-                "reference": "bb5b29b25beaf877525e8f4aaacf51ce115e3e7a"
+                "reference": "c5e8c73e77f8d88dc10238e0f4d89e1a78cf6b66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DevGroup-ru/yii2-intent-analytics/zipball/bb5b29b25beaf877525e8f4aaacf51ce115e3e7a",
-                "reference": "bb5b29b25beaf877525e8f4aaacf51ce115e3e7a",
+                "url": "https://api.github.com/repos/DevGroup-ru/yii2-intent-analytics/zipball/c5e8c73e77f8d88dc10238e0f4d89e1a78cf6b66",
+                "reference": "c5e8c73e77f8d88dc10238e0f4d89e1a78cf6b66",
                 "shasum": ""
             },
             "require": {
@@ -1116,7 +1116,7 @@
                 "statistics",
                 "yii2"
             ],
-            "time": "2016-02-11 14:31:16"
+            "time": "2016-08-17 09:29:31"
         },
         {
             "name": "devgroup/yii2-jsoneditor",
