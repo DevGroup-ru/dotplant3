@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4d260da63b213a542bdbcdd435e429f5",
-    "content-hash": "d10a12cb0ede5f72a47330c7bdcd0674",
+    "hash": "a244e86cc9153b9786f57777c05c2426",
+    "content-hash": "e26a44e8df9fc4307fb603e7e50a0efa",
     "packages": [
         {
             "name": "2amigos/yii2-transliterator-helper",
@@ -1061,12 +1061,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/DevGroup-ru/yii2-intent-analytics.git",
-                "reference": "c5e8c73e77f8d88dc10238e0f4d89e1a78cf6b66"
+                "reference": "fc1604c5b98243547336a121fdc236ba50e64105"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DevGroup-ru/yii2-intent-analytics/zipball/c5e8c73e77f8d88dc10238e0f4d89e1a78cf6b66",
-                "reference": "c5e8c73e77f8d88dc10238e0f4d89e1a78cf6b66",
+                "url": "https://api.github.com/repos/DevGroup-ru/yii2-intent-analytics/zipball/fc1604c5b98243547336a121fdc236ba50e64105",
+                "reference": "fc1604c5b98243547336a121fdc236ba50e64105",
                 "shasum": ""
             },
             "require": {
@@ -1116,7 +1116,7 @@
                 "statistics",
                 "yii2"
             ],
-            "time": "2016-08-17 09:29:31"
+            "time": "2016-08-17 11:31:52"
         },
         {
             "name": "devgroup/yii2-jsoneditor",
@@ -1685,70 +1685,6 @@
                 "string"
             ],
             "time": "2016-05-12 17:23:41"
-        },
-        {
-            "name": "dotplant/entity-structure",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/DevGroup-ru/dotplant-entity-structure.git",
-                "reference": "c5af82f9523272ed775a9eab09193db362ab3c63"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/DevGroup-ru/dotplant-entity-structure/zipball/c5af82f9523272ed775a9eab09193db362ab3c63",
-                "reference": "c5af82f9523272ed775a9eab09193db362ab3c63",
-                "shasum": ""
-            },
-            "require": {
-                "devgroup/yii2-admin-utils": "dev-master",
-                "devgroup/yii2-data-structure-tools": "*",
-                "devgroup/yii2-entity": "*",
-                "devgroup/yii2-multilingual": "*",
-                "php": ">=5.5.0",
-                "yiisoft/yii2": "~2.0.0"
-            },
-            "require-dev": {
-                "codeception/codeception": "^2.2",
-                "yiisoft/yii2-codeception": "~2.0.0"
-            },
-            "type": "dotplant-extension",
-            "extra": {
-                "yii2-extension": {
-                    "name": "DotPlant Entity Structure",
-                    "name_ru": "DotPlant структура сущностей",
-                    "iconUrl": "",
-                    "description_ru": "Расширение с базовой общей структурой для системы сущностей DotPlant3 CMS"
-                },
-                "migrationPath": [
-                    "src/migrations"
-                ],
-                "configurables": "src/configurables.php",
-                "translationCategory": "dotplant.entity.structure"
-            },
-            "autoload": {
-                "psr-4": {
-                    "DotPlant\\EntityStructure\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Pavel Naumov",
-                    "email": "huggbies@email.su"
-                }
-            ],
-            "description": "Base common structure for DotPlant3 Entity system",
-            "keywords": [
-                "dotplant",
-                "entity",
-                "structure",
-                "yii2"
-            ],
-            "time": "2016-08-16 13:46:51"
         },
         {
             "name": "dotplant/monster",
@@ -5595,7 +5531,6 @@
         "devgroup/yii2-users-module": 20,
         "devgroup/yii2-data-structure-tools": 20,
         "devgroup/yii2-events-system": 20,
-        "dotplant/entity-structure": 20,
         "devgroup/dotplant-dev": 20
     },
     "prefer-stable": false,
