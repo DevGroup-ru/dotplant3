@@ -26,4 +26,3 @@ phpunit.phar
 # local phpunit config
 /phpunit.xml
 /monster
-/web/assets

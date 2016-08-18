@@ -13,11 +13,9 @@
     "require": {
         "devgroup/dotplant": "dev-master",
         "devgroup/yii2-users-module": "dev-master",
-        "wikimedia/composer-merge-plugin": "^1.3",
         "symfony/finder": "^3.0",
         "devgroup/yii2-data-structure-tools": "dev-master",
-        "devgroup/yii2-events-system": "dev-master",
-        "dotplant/entity-structure": "dev-master"
+        "devgroup/yii2-events-system": "dev-master"
     },
     "require-dev": {
         "devgroup/dotplant-dev": "dev-master"
@@ -28,8 +26,10 @@
       "store-auths": true
     },
     "scripts": {
-      "post-create-project-cmd": [
-        "yii\\composer\\Installer::postCreateProject"
+      "post-install-cmd": [
+        "app\\Installer::createLocalConfigs",
+        "yii\\composer\\Installer::postCreateProject",
+        "DevGroup\\ExtensionsManager\\Installer::createComposerFile"
       ]
     },
     "extra": {
@@ -44,17 +44,12 @@
           }
         ],
         "generateCookieValidationKey": [
-          "config/web.php"
+          "config/web-local.php"
         ]
       },
       "asset-installer-paths": {
         "npm-asset-library": "vendor/npm",
         "bower-asset-library": "vendor/bower"
-      },
-      "merge-plugin": {
-        "include": [
-          "extensions/composer.json"
-        ]
       }
     },
     "provide": {
@@ -67,5 +62,10 @@
         "type": "composer",
         "url": "https://asset-packagist.org"
       }
-    ]
+    ],
+  "autoload": {
+    "psr-4": {
+      "app\\": "./"
+    }
+  }
 }
