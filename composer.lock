@@ -196,6 +196,22 @@
             "time": "2016-07-18 10:46:04"
         },
         {
+            "name": "bower-asset/alloyeditor",
+            "version": "1.2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liferay/alloy-editor.git",
+                "reference": "50c94256f97c37c1f0affa0e2b73f378a2bc2df7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/liferay/alloy-editor/zipball/50c94256f97c37c1f0affa0e2b73f378a2bc2df7",
+                "reference": "50c94256f97c37c1f0affa0e2b73f378a2bc2df7",
+                "shasum": null
+            },
+            "type": "library"
+        },
+        {
             "name": "bower-asset/bootstrap",
             "version": "3.3.7.0",
             "source": {
@@ -1469,12 +1485,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/DevGroup-ru/yii2-users-module.git",
-                "reference": "338b4b0fa482ffe6fbd4143b7a04adc4bacd13e2"
+                "reference": "6c30db241b907d6ed0ac83e5ecf5f9120d48106e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DevGroup-ru/yii2-users-module/zipball/338b4b0fa482ffe6fbd4143b7a04adc4bacd13e2",
-                "reference": "338b4b0fa482ffe6fbd4143b7a04adc4bacd13e2",
+                "url": "https://api.github.com/repos/DevGroup-ru/yii2-users-module/zipball/6c30db241b907d6ed0ac83e5ecf5f9120d48106e",
+                "reference": "6c30db241b907d6ed0ac83e5ecf5f9120d48106e",
                 "shasum": ""
             },
             "require": {
@@ -1517,7 +1533,7 @@
                 "rbac",
                 "yii2"
             ],
-            "time": "2016-08-12 10:29:33"
+            "time": "2016-08-17 13:19:51"
         },
         {
             "name": "dmstr/yii2-adminlte-asset",
@@ -1692,15 +1708,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/DevGroup-ru/dotplant-monster.git",
-                "reference": "e94d2b8bd5bd16d97e0a085f9864fea5e823183b"
+                "reference": "a4c7e8f9d62568d59850ab3f21136bd0243d0b1d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DevGroup-ru/dotplant-monster/zipball/e94d2b8bd5bd16d97e0a085f9864fea5e823183b",
-                "reference": "e94d2b8bd5bd16d97e0a085f9864fea5e823183b",
+                "url": "https://api.github.com/repos/DevGroup-ru/dotplant-monster/zipball/a4c7e8f9d62568d59850ab3f21136bd0243d0b1d",
+                "reference": "a4c7e8f9d62568d59850ab3f21136bd0243d0b1d",
                 "shasum": ""
             },
             "require": {
+                "bower-asset/alloyeditor": "^1.2.3",
                 "devgroup/bh": "~5.1",
                 "devgroup/yii2-admin-utils": "dev-master",
                 "devgroup/yii2-data-structure-tools": "dev-master",
@@ -1742,7 +1759,7 @@
                 }
             ],
             "description": "Here be monsters",
-            "time": "2016-08-14 11:37:14"
+            "time": "2016-08-18 12:05:39"
         },
         {
             "name": "elasticsearch/elasticsearch",
@@ -3157,12 +3174,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Studio-42/elFinder.git",
-                "reference": "6b9a5283f32fbadb0e6d5714e60a2e6637a523ac"
+                "reference": "51ac460bec3e7008f7d5c694acc4930a2e9af04c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Studio-42/elFinder/zipball/6b9a5283f32fbadb0e6d5714e60a2e6637a523ac",
-                "reference": "6b9a5283f32fbadb0e6d5714e60a2e6637a523ac",
+                "url": "https://api.github.com/repos/Studio-42/elFinder/zipball/51ac460bec3e7008f7d5c694acc4930a2e9af04c",
+                "reference": "51ac460bec3e7008f7d5c694acc4930a2e9af04c",
                 "shasum": ""
             },
             "require": {
@@ -3207,7 +3224,7 @@
             ],
             "description": "File manager for web",
             "homepage": "http://elfinder.org",
-            "time": "2016-08-17 02:21:12"
+            "time": "2016-08-18 07:19:57"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -4434,12 +4451,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/dbunit.git",
-                "reference": "1174eec88a8300487675b78a090a3fc4ce9b4e76"
+                "reference": "38f88a393cbdb50c78287a7b84dc1439a3afa518"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/dbunit/zipball/1174eec88a8300487675b78a090a3fc4ce9b4e76",
-                "reference": "1174eec88a8300487675b78a090a3fc4ce9b4e76",
+                "url": "https://api.github.com/repos/sebastianbergmann/dbunit/zipball/38f88a393cbdb50c78287a7b84dc1439a3afa518",
+                "reference": "38f88a393cbdb50c78287a7b84dc1439a3afa518",
                 "shasum": ""
             },
             "require": {
@@ -4481,7 +4498,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2016-06-09 07:00:08"
+            "time": "2016-08-18 09:31:47"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -4976,12 +4993,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/environment.git",
-                "reference": "622c5dc0a8036cfc4ccd73c7b1b668a431e69d96"
+                "reference": "be2c607e43ce4c89ecd60e75c6a85c126e754aea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/622c5dc0a8036cfc4ccd73c7b1b668a431e69d96",
-                "reference": "622c5dc0a8036cfc4ccd73c7b1b668a431e69d96",
+                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/be2c607e43ce4c89ecd60e75c6a85c126e754aea",
+                "reference": "be2c607e43ce4c89ecd60e75c6a85c126e754aea",
                 "shasum": ""
             },
             "require": {
@@ -5018,7 +5035,7 @@
                 "environment",
                 "hhvm"
             ],
-            "time": "2016-06-11 08:21:19"
+            "time": "2016-08-18 05:49:44"
         },
         {
             "name": "sebastian/exporter",
@@ -5287,16 +5304,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozart/assert.git",
-                "reference": "0a64afb2cfaf22a36bb4c917849cdee2d008f26a"
+                "reference": "8444f2ac9f86342665cdae47b6d3ea6e07794456"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/0a64afb2cfaf22a36bb4c917849cdee2d008f26a",
-                "reference": "0a64afb2cfaf22a36bb4c917849cdee2d008f26a",
+                "url": "https://api.github.com/repos/webmozart/assert/zipball/8444f2ac9f86342665cdae47b6d3ea6e07794456",
+                "reference": "8444f2ac9f86342665cdae47b6d3ea6e07794456",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.3.3|^7.0"
+                "php": "^5.3.3 || ^7.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.6",
@@ -5329,7 +5346,7 @@
                 "check",
                 "validate"
             ],
-            "time": "2016-08-15 15:30:25"
+            "time": "2016-08-18 09:30:53"
         },
         {
             "name": "yiisoft/yii2-codeception",
