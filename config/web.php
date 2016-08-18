@@ -19,7 +19,7 @@ $config = [
         'user' => [
             'identityClass' => 'DevGroup\Users\models\User',
             'enableAutoLogin' => true,
-            'loginUrl' => ['@logout'],
+            'loginUrl' => '@login',
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',
