@@ -2,6 +2,8 @@
 
 namespace app;
 
+use yii\helpers\VarDumper;
+
 class Installer
 {
     public static function createLocalConfigs()
@@ -31,7 +33,7 @@ class Installer
             $filename = __DIR__ . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . $name;
             if (file_exists($filename) === false) {
                 echo "File 'config/" . $name . "' is created: ";
-                echo file_put_contents($filename, "<?php\n\nreturn " . \yii\helpers\VarDumper::export($config) . ";\n") !== false
+                echo file_put_contents($filename, "<?php\n\nreturn " . VarDumper::export($config) . ";\n") !== false
                     ? "yes\n"
                     : "no\n";
             }

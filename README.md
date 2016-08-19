@@ -8,7 +8,7 @@ Installation
 
 1. Clone a project `git clone git@github.com:DevGroup-ru/dotplant3.git`
 2. Go to an application directory `cd dotplant3`
-3. Run an installing of composer packages `/usr/bin/php composer.phar install`
+3. Run an installing of composer packages `/usr/bin/php composer.phar create-project`
 4. Modify configuration files
     * Open `config/db-local.php` and set your connection parameters. It looks like;
     * Change a domain in `config/languages/Context.php` and `config/languages/Language.php` if needs;

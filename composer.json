@@ -26,10 +26,10 @@
       "store-auths": true
     },
     "scripts": {
-      "post-install-cmd": [
+      "post-create-project-cmd": [
         "app\\Installer::createLocalConfigs",
         "yii\\composer\\Installer::postCreateProject",
-        "DevGroup\\ExtensionsManager\\Installer::createComposerFile"
+        "php yii extension/update-config"
       ]
     },
     "extra": {
