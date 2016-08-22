@@ -5,7 +5,7 @@ namespace app\models;
 use DevGroup\DataStructure\traits\PropertiesTrait;
 use DevGroup\TagDependencyHelper\CacheableActiveRecord;
 use DevGroup\TagDependencyHelper\TagDependencyTrait;
-use DotPlant\Monster\Universal\EntityTrait;
+use DotPlant\Monster\Universal\MonsterEntityTrait;
 use Yii;
 use yii\helpers\ArrayHelper;
 
@@ -22,7 +22,7 @@ use yii\helpers\ArrayHelper;
 class Page extends \yii\db\ActiveRecord
 {
     use TagDependencyTrait;
-    use EntityTrait;
+    use MonsterEntityTrait;
     use PropertiesTrait;
     /**
      * @inheritdoc
