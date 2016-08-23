@@ -11,6 +11,7 @@ $config = [
         'HOME' => '/Users/bethrezen',
     ],
     'uploadPath' => '@webroot/files/',
+    'admin.layout' => '@app/views/layouts/admin',
 ];
 
 $generatedConfig = __DIR__ . '/generated/params-generated.php';
