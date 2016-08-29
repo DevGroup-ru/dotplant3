@@ -10,6 +10,7 @@ $config = [
     'bootstrap' => [
         'log',
         'properties',
+        'users',
     ],
     'components' => [
         'cache' => require(__DIR__ . DIRECTORY_SEPARATOR . 'cache.php'),

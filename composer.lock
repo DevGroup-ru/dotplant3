@@ -1335,12 +1335,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/DevGroup-ru/yii2-media-storage.git",
-                "reference": "c2b29f353e503d42cb58d051ac46f2e9ad5c4bd9"
+                "reference": "1563a5c1b471be729e15ae66e20487111ebf3d00"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DevGroup-ru/yii2-media-storage/zipball/c2b29f353e503d42cb58d051ac46f2e9ad5c4bd9",
-                "reference": "c2b29f353e503d42cb58d051ac46f2e9ad5c4bd9",
+                "url": "https://api.github.com/repos/DevGroup-ru/yii2-media-storage/zipball/1563a5c1b471be729e15ae66e20487111ebf3d00",
+                "reference": "1563a5c1b471be729e15ae66e20487111ebf3d00",
                 "shasum": ""
             },
             "require": {
@@ -1407,7 +1407,7 @@
                 "extension",
                 "yii2"
             ],
-            "time": "2016-08-14 09:08:53"
+            "time": "2016-08-29 12:02:49"
         },
         {
             "name": "devgroup/yii2-multilingual",
@@ -1574,12 +1574,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/DevGroup-ru/yii2-users-module.git",
-                "reference": "91c99081182a800afe8cc2b2afa405a9c4d15019"
+                "reference": "fc083752fd43b4b0a210117a0df2949d2c9eaf07"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DevGroup-ru/yii2-users-module/zipball/91c99081182a800afe8cc2b2afa405a9c4d15019",
-                "reference": "91c99081182a800afe8cc2b2afa405a9c4d15019",
+                "url": "https://api.github.com/repos/DevGroup-ru/yii2-users-module/zipball/fc083752fd43b4b0a210117a0df2949d2c9eaf07",
+                "reference": "fc083752fd43b4b0a210117a0df2949d2c9eaf07",
                 "shasum": ""
             },
             "require": {
@@ -1623,7 +1623,7 @@
                 "rbac",
                 "yii2"
             ],
-            "time": "2016-08-29 10:20:19"
+            "time": "2016-08-29 12:06:36"
         },
         {
             "name": "dmstr/yii2-adminlte-asset",

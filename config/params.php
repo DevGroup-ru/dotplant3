@@ -4,6 +4,7 @@ $config = [
     'adminEmail' => 'admin@example.com',
     'yii.migrations' => [
         '@yii/rbac/migrations/',
+        '@DevGroup/ExtensionsManager/migrations',
     ],
     'icon-framework' => 'fa',
     'PolyglotTranslationPath' => '@app/messages/polyglot.js',
