@@ -96,6 +96,10 @@ $config = [
             'class' => DevGroup\EventsSystem\Module::class,
             'layout' => '@app/views/layouts/admin',
         ],
+        'admin' => [
+            'class' => 'app\modules\admin\Module',
+            'layout' => '@app/views/layouts/admin',
+        ],
     ],
     'params' => require(__DIR__ . '/params.php'),
 ];
