@@ -100,6 +100,10 @@ $config = [
             'class' => 'app\modules\admin\Module',
             'layout' => '@app/views/layouts/admin',
         ],
+        'measure' => [
+            'class' => DevGroup\Measure\Module::class,
+            'layout' => '@app/views/layouts/admin',
+        ]
     ],
     'params' => require(__DIR__ . '/params.php'),
 ];
