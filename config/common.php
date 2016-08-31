@@ -71,6 +71,7 @@ $config = [
         ],
         'authManager' => [
             'class' => yii\rbac\DbManager::class,
+            'cache' => 'cache',
         ],
     ],
     'modules' => [

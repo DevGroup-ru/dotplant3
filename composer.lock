@@ -3385,16 +3385,16 @@
         },
         {
             "name": "rmrevin/yii2-fontawesome",
-            "version": "2.15.2",
+            "version": "2.16.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rmrevin/yii2-fontawesome.git",
-                "reference": "23e282eadeaec70ea7a0241eabf5d672568f26ba"
+                "reference": "ab08282b8cd05c570634926f41c868cf902981e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rmrevin/yii2-fontawesome/zipball/23e282eadeaec70ea7a0241eabf5d672568f26ba",
-                "reference": "23e282eadeaec70ea7a0241eabf5d672568f26ba",
+                "url": "https://api.github.com/repos/rmrevin/yii2-fontawesome/zipball/ab08282b8cd05c570634926f41c868cf902981e7",
+                "reference": "ab08282b8cd05c570634926f41c868cf902981e7",
                 "shasum": ""
             },
             "require": {
@@ -3432,7 +3432,7 @@
                 "font",
                 "yii"
             ],
-            "time": "2016-08-19 14:09:51"
+            "time": "2016-08-31 12:41:25"
         },
         {
             "name": "studio-42/elfinder",
@@ -3440,12 +3440,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Studio-42/elFinder.git",
-                "reference": "a319a08e0f6fbadc21d8474bfdfa684b9f4d6506"
+                "reference": "54c645097ee6627d7d1190f9a79024d24d94a43d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Studio-42/elFinder/zipball/a319a08e0f6fbadc21d8474bfdfa684b9f4d6506",
-                "reference": "a319a08e0f6fbadc21d8474bfdfa684b9f4d6506",
+                "url": "https://api.github.com/repos/Studio-42/elFinder/zipball/54c645097ee6627d7d1190f9a79024d24d94a43d",
+                "reference": "54c645097ee6627d7d1190f9a79024d24d94a43d",
                 "shasum": ""
             },
             "require": {
@@ -3490,7 +3490,7 @@
             ],
             "description": "File manager for web",
             "homepage": "http://elfinder.org",
-            "time": "2016-08-31 08:13:33"
+            "time": "2016-08-31 09:01:25"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -3860,12 +3860,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "42352adc9a12b0a0619f13e1354bc142e52c1b1f"
+                "reference": "c72d406387766dd8e279b799730b0cfe1f461fbf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/42352adc9a12b0a0619f13e1354bc142e52c1b1f",
-                "reference": "42352adc9a12b0a0619f13e1354bc142e52c1b1f",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/c72d406387766dd8e279b799730b0cfe1f461fbf",
+                "reference": "c72d406387766dd8e279b799730b0cfe1f461fbf",
                 "shasum": ""
             },
             "require": {
@@ -3946,7 +3946,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2016-08-30 19:25:23"
+            "time": "2016-08-31 12:43:48"
         },
         {
             "name": "yiisoft/yii2-authclient",
