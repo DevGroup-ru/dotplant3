@@ -44,6 +44,15 @@ return [
             'position' => View::POS_HEAD,
         ],
     ],
+    'devgroup\JsTreeWidget\widgets\JsTreeAssetBundle' => [
+        'sourcePath' => null,
+        'js' => [
+            'https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.2/jstree.min.js',
+        ],
+        'css' => [
+            'https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.2/themes/default/style.min.css',
+        ],
+    ],
     'yii\bootstrap\BootstrapAsset' =>[
         'sourcePath' => null,
         'css' => [
