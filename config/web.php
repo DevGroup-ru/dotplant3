@@ -77,6 +77,7 @@ $config = ArrayHelper::merge($config, require(__DIR__ . DIRECTORY_SEPARATOR . 'c
 $configsToMerge = [
     'generated/web-generated.php',
     'web-local.php',
+    '../modules/site/config/web.php'
 ];
 
 foreach ($configsToMerge as $file) {
