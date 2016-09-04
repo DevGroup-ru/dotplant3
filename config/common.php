@@ -11,6 +11,7 @@ $config = [
         'log',
         'properties',
         'users',
+        'DotPlant\Monster\ExtensionBootstrap',
     ],
     'components' => [
         'cache' => require(__DIR__ . DIRECTORY_SEPARATOR . 'cache.php'),
@@ -34,7 +35,10 @@ $config = [
                 'debug/default',
             ],
             'rules' => [
-                '' => 'site/index',
+//                '' => 'site/index',
+                [
+                    'class' => 'DotPlant\EntityStructure\components\StructureUrlRule',
+                ],
             ],
             'scriptUrl' => '',
             'baseUrl' => '',

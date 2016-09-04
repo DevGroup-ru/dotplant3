@@ -99,12 +99,12 @@ class PermissionsHelper extends Component
                     }
                 }
                 if (true === isset($roleData['roles'])) {
-                    foreach ($roleData['roles'] as $roleName) {
+                    foreach ($roleData['roles'] as $roleToInherit) {
                         if (
-                            true === isset($createdMap[$roleName])
-                            && (true === $createdMap[$roleName] instanceof Item)
+                            true === isset($createdMap[$roleToInherit])
+                            && (true === $createdMap[$roleToInherit] instanceof Item)
                         ) {
-                            $auth->addChild($role, $createdMap[$roleName]);
+                            $auth->addChild($role, $createdMap[$roleToInherit]);
                         }
                     }
                 }
