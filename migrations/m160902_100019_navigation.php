@@ -1,6 +1,8 @@
 <?php
 
 use app\helpers\PermissionsHelper;
+use app\models\BackendMenu;
+use app\models\Navigation;
 use app\models\NavigationTranslation;
 use yii\db\Migration;
 
@@ -28,7 +30,7 @@ class m160902_100019_navigation extends Migration
             : null;
 
         $this->createTable(
-            '{{%navigation%}}',
+            Navigation::tableName(),
             [
                 'id' => $this->primaryKey(),
                 'parent_id' => $this->integer()->notNull()->defaultValue(0),
@@ -48,7 +50,7 @@ class m160902_100019_navigation extends Migration
 
         // translations
         $this->createTable(
-            '{{%navigation_translation}}',
+            NavigationTranslation::tableName(),
             [
                 'model_id' => $this->integer()->notNull(),
                 'language_id' => $this->integer()->notNull(),
@@ -65,7 +67,7 @@ class m160902_100019_navigation extends Migration
 
         $this->createIndex(
             'ix-navigation-parent_id-active-is_deleted',
-            '{{%navigation%}}',
+            Navigation::tableName(),
             [
                 'parent_id',
                 'active',
@@ -76,9 +78,9 @@ class m160902_100019_navigation extends Migration
 
         $this->addForeignKey(
             'fk-navigation_translation-model_id',
-            '{{%navigation_translation}}',
+            NavigationTranslation::tableName(),
             ['model_id'],
-            '{{%navigation}}',
+            Navigation::tableName(),
             ['id'],
             'CASCADE',
             'CASCADE'
@@ -88,14 +90,35 @@ class m160902_100019_navigation extends Migration
         if (null !== $adminRole = $auth->getRole('CoreAdministrator')) {
             $auth->addChild($adminRole, $auth->getRole('NavigationAdministrator'));
         }
+
+        $this->insert(
+            BackendMenu::tableName(),
+            [
+                'parent_id' => 0,
+                'name' => 'Navigation',
+                'icon' => 'fa fa-list',
+                'sort_order' => 0,
+                'rbac_check' => 'core-navigation-view',
+                'css_class' => '',
+                'route' => '/navigation/index',
+                'translation_category' => 'app',
+                'added_by_ext' => 'core'
+            ]
+        );
     }
 
     public function down()
     {
         $this->db->createCommand("SET foreign_key_checks = 0")->execute();
-        $this->dropTable('{{%navigation_translation%}}');
-        $this->dropTable('{{%navigation%}}');
+        $this->dropTable(NavigationTranslation::tableName());
+        $this->dropTable(Navigation::tableName());
         $this->db->createCommand("SET foreign_key_checks = 1")->execute();
         PermissionsHelper::removePermissions(self::$permissionsConfig);
+        $this->delete(
+            BackendMenu::tableName(),
+            [
+                'rbac_check' => 'core-navigation-view'
+            ]
+        );
     }
 }

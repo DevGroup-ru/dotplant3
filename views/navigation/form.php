@@ -5,6 +5,7 @@ use DevGroup\Multilingual\models\Context;
 use DevGroup\Multilingual\widgets\MultilingualFormTabs;
 use DotPlant\EntityStructure\models\BaseStructure;
 use kartik\select2\Select2;
+use kartik\switchinput\SwitchInput;
 use unclead\widgets\MultipleInput;
 use unclead\widgets\MultipleInputColumn;
 use yii\helpers\ArrayHelper;
@@ -79,6 +80,8 @@ $structuresArray = [];
 
                 <?= $form->field($model, 'sort_order') ?>
 
+                <?= $form->field($model, 'active')->widget(SwitchInput::class) ?>
+
             </article>
             <article class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 
@@ -91,6 +94,9 @@ $structuresArray = [];
                 ); ?>
 
                 <?= $form->field($model, 'url') ?>
+
+                <?php /*@todo get tree structure**/ ?>
+                <?= $form->field($model, 'structure_id') ?>
 
                 <?= $form->field($model, 'params')
                     ->label(false)

@@ -10,6 +10,7 @@ use DevGroup\Multilingual\traits\MultilingualTrait;
 use DevGroup\TagDependencyHelper\CacheableActiveRecord;
 use DevGroup\TagDependencyHelper\TagDependencyTrait;
 use Yii;
+use yii\caching\TagDependency;
 use yii\data\ActiveDataProvider;
 
 /**
@@ -135,5 +136,84 @@ class Navigation extends \yii\db\ActiveRecord
 
 
         return $dataProvider;
+    }
+
+    /**
+     * @return array
+     */
+    public static function getNavigation($parent_id = 0)
+    {
+        $cacheKey = 'Navigation:menuItems:' . implode(
+            ':',
+            [
+                Yii::$app->language,
+                Yii::$app->multilingual->context_id,
+                $parent_id
+            ]
+        ) ;
+
+        if (false === $items = Yii::$app->cache->get($cacheKey)) {
+            $items = (array)self::getTree($parent_id);
+            Yii::$app->cache->set(
+                $cacheKey,
+                $items,
+                86400,
+                new TagDependency(['tags' => self::commonTag()])
+            );
+        }
+        self::checkPermissions($items);
+        return $items;
+    }
+
+    /**
+     * @param array $items
+     */
+    private static function checkPermissions(&$items)
+    {
+        foreach ($items as &$item) {
+            if (empty($item['rbac_check']) === false) {
+                $item['visible'] = Yii::$app->user->can($item['rbac_check']);
+                unset($item['rbac_check']);
+                break;
+            }
+            if (empty($item['items']) === false) {
+                self::checkPermissions($item['items']);
+            }
+        }
+    }
+
+    /**
+     * Returns all available to logged user BackendMenu items in yii\widgets\Menu acceptable format
+     * @return array Tree representation of items
+     */
+    private static function getTree($parent_id = 0)
+    {
+        $items = [];
+        foreach (self::find()
+                     ->where(
+                         [
+                             'parent_id' => $parent_id,
+                             'active'=> 1,
+                             'is_deleted'=>0
+                         ]
+                     )->orderBy('sort_order')
+                     ->asArray()->all() as $item) {
+            $url = '#';
+            if (empty($item['url']) === false) {
+                $url = $item['url'];
+            } elseif (empty($item['structure_id']) === false) {
+               /*@todo $url by structure_id **/
+            }
+            $items[] = [
+                'label' => $item['defaultTranslation']['label'],
+                'url' => $url,
+                'options' => [
+                    'class' => $item['css_class']
+                ],
+                'rbac_check' => $item['rbac_check'],
+                'items' => self::getTree($item['id'])
+            ];
+        }
+        return $items;
     }
 }

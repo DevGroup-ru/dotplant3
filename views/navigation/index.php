@@ -148,6 +148,9 @@ TPL;
 
                                 return $result;
                             },
+                            'appendUrlParams' => [
+                                'parent_id' => $parent_id,
+                            ],
                         ],
                     ],
                 ]) ?>
