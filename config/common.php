@@ -12,6 +12,7 @@ $config = [
         'properties',
         'users',
         'DotPlant\Monster\ExtensionBootstrap',
+        'DevGroup\AdminUtils\UniqueIds',
     ],
     'components' => [
         'cache' => require(__DIR__ . DIRECTORY_SEPARATOR . 'cache.php'),
