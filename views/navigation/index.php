@@ -86,30 +86,67 @@ TPL;
                             'attribute' => 'id',
                         ],
                         'label',
-                        'icon',
                         'css_class',
                         'rbac_check',
                         [
-                            'class' => ActionColumn::class,
+                            'attribute' => 'is_deleted',
+                            'label' => Yii::t('app', 'Show deleted?'),
+                            'value' => function ($model) {
+                                return $model->isDeleted() === true ? Yii::t('app', 'Deleted') : Yii::t('app', 'Active');
+                            },
+                            'filter' => [
+                                Yii::t('app', 'Show only active'),
+                                Yii::t('app', 'Show only deleted')
+                            ],
+                            'filterInputOptions' => [
+                                'class' => 'form-control',
+                                'id' => null,
+                                'prompt' => Yii::t('app', 'Show all')
+                            ]
+                        ],
+                        [
+                            'class' => ActionColumn::className(),
                             'buttons' => function ($model, $key, $index, $column) {
-                                return [
+                                $result = [
                                     'edit' => [
-                                        'url' => '/backend-menu/edit',
+                                        'url' => 'edit',
                                         'icon' => 'pencil',
                                         'class' => 'btn-primary',
-                                        'attrs' => ['parent_id'],
                                         'label' => Yii::t('app', 'Edit'),
                                     ],
-                                    'delete' => [
-                                        'url' => '/backend-menu/delete',
+                                ];
+
+                                if ($model->isDeleted() === false) {
+                                    $result['delete'] = [
+                                        'url' => 'delete',
+                                        'visible' => false,
                                         'icon' => 'trash-o',
                                         'class' => 'btn-warning',
                                         'label' => Yii::t('app', 'Delete'),
                                         'options' => [
                                             'data-action' => 'delete',
                                         ],
-                                    ]
-                                ];
+                                    ];
+                                } else {
+                                    $result['restore'] = [
+                                        'url' => 'restore',
+                                        'icon' => 'undo',
+                                        'class' => 'btn-info',
+                                        'label' => Yii::t('app', 'Restore'),
+                                    ];
+                                    $result['delete'] = [
+                                        'url' => 'delete',
+                                        'urlAppend' => ['hard' => 1],
+                                        'icon' => 'trash-o',
+                                        'class' => 'btn-danger',
+                                        'label' => Yii::t('app', 'Delete'),
+                                        'options' => [
+                                            'data-action' => 'delete',
+                                        ],
+                                    ];
+                                }
+
+                                return $result;
                             },
                         ],
                     ],

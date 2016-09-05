@@ -1,8 +1,13 @@
 <?php
 use app\models\Navigation;
 use DevGroup\AdminUtils\FrontendHelper;
+use DevGroup\Multilingual\models\Context;
+use DevGroup\Multilingual\widgets\MultilingualFormTabs;
+use DotPlant\EntityStructure\models\BaseStructure;
+use kartik\select2\Select2;
 use unclead\widgets\MultipleInput;
 use unclead\widgets\MultipleInputColumn;
+use yii\helpers\ArrayHelper;
 use yii\widgets\ActiveForm;
 
 /**
@@ -25,7 +30,7 @@ if (($model->parent_id > 0)
             'id' => $parent->id,
             'parent_id' => $parent->parent_id
         ],
-        'label' => $parent->name
+        'label' => $parent->label
     ];
 }
 $this->params['breadcrumbs'][] = $this->title;
@@ -40,6 +45,20 @@ if (is_array($model->params) === true) {
     }
 }
 
+$parentsArray = [0 => 'Root'];
+
+$parentItems = Navigation::find()->orderBy('parent_id')->asArray()->all();
+
+foreach ($parentItems as $item) {
+    if (isset($item['defaultTranslation']['label'])) {
+        $parentsArray[$item['id']] = $item['defaultTranslation']['label'];
+    }
+}
+
+
+$structuresArray = [];
+
+
 ?>
 
 
@@ -52,12 +71,7 @@ if (is_array($model->params) === true) {
 
             <article class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 
-
-                <?= $form->field($model, 'parent_id')->dropDownList(
-                    [0 => 'Root'] + Navigation::find()->select(['id', 'id'])->indexBy('id')->column()
-                );
-                ?>
-
+                <?= $form->field($model, 'parent_id')->widget(Select2::class, ['data' => $parentsArray]); ?>
 
                 <?= $form->field($model, 'css_class') ?>
 
@@ -65,12 +79,18 @@ if (is_array($model->params) === true) {
 
                 <?= $form->field($model, 'sort_order') ?>
 
-
             </article>
             <article class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 
-                <?= $form->field($model, 'url') ?>
+                <?= $form->field($model, 'context_id')->dropDownList(
+                    ArrayHelper::map(
+                        Context::find()->asArray()->all(),
+                        'id',
+                        'name'
+                    )
+                ); ?>
 
+                <?= $form->field($model, 'url') ?>
 
                 <?= $form->field($model, 'params')
                     ->label(false)
@@ -94,6 +114,13 @@ if (is_array($model->params) === true) {
                     ) ?>
 
             </article>
+        </div>
+        <div class="row">
+            <?= MultilingualFormTabs::widget([
+                'model' => $model,
+                'childView' => __DIR__ . DIRECTORY_SEPARATOR . '_navigation-multilingual.php',
+                'form' => $form,
+            ]) ?>
         </div>
         <?= $hasAccess ? FrontendHelper::formSaveButtons(
             $model,

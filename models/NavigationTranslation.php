@@ -27,7 +27,7 @@ class NavigationTranslation extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['model_id', 'language_id', 'label'], 'required'],
+            [['label'], 'required'],
             [['model_id', 'language_id'], 'integer'],
             [['label'], 'string', 'max' => 255],
             [['model_id'], 'exist', 'skipOnError' => true, 'targetClass' => Navigation::className(), 'targetAttribute' => ['model_id' => 'id']],

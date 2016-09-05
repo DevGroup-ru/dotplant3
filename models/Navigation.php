@@ -19,12 +19,13 @@ use yii\data\ActiveDataProvider;
  * @property integer $parent_id
  * @property string $url
  * @property integer $structure_id
- * @property string $params
+ * @property array $params
  * @property string $css_class
  * @property string $rbac_check
  * @property integer $sort_order
  * @property integer $active
  * @property integer $is_deleted
+ * @property string $label
  */
 class Navigation extends \yii\db\ActiveRecord
 {
@@ -42,11 +43,11 @@ class Navigation extends \yii\db\ActiveRecord
     {
         return [
             'multilingual' => [
-                'class' => MultilingualActiveRecord::className(),
+                'class' => MultilingualActiveRecord::class,
                 'translationPublishedAttribute' => false,
             ],
             'CacheableActiveRecord' => [
-                'class' => CacheableActiveRecord::className(),
+                'class' => CacheableActiveRecord::class,
             ],
             'PackedJsonAttributes' => [
                 'class' => PackedJsonAttributes::class,
@@ -68,8 +69,8 @@ class Navigation extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['parent_id', 'structure_id', 'sort_order', 'active', 'is_deleted'], 'integer'],
-            [['params'], 'string'],
+            [['parent_id', 'sort_order', 'active', 'is_deleted', 'context_id'], 'required'],
+            [['parent_id', 'structure_id', 'sort_order', 'active', 'context_id'], 'integer'],
             [['url', 'css_class', 'rbac_check'], 'string', 'max' => 255],
         ];
     }
@@ -96,7 +97,9 @@ class Navigation extends \yii\db\ActiveRecord
     public function search($parent_id, $params, $showHidden = false)
     {
         $query = self::find();
-
+        $query->where([
+            'parent_id' => $parent_id
+        ]);
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
@@ -120,7 +123,7 @@ class Navigation extends \yii\db\ActiveRecord
 
         // perform filtering
         $query->andFilterWhere(['id' => $this->id]);
-        $query->andFilterWhere(['like', 'sort_order', $this->key]);
+        $query->andFilterWhere(['like', 'sort_order', $this->sort_order]);
 
 
         $query->andFilterWhere(['parent_id' => $this->parent_id]);
@@ -128,7 +131,7 @@ class Navigation extends \yii\db\ActiveRecord
         $query->andFilterWhere(['is_deleted' => $this->is_deleted]);
 
         // filter by multilingual field
-        $query->andFilterWhere(['like', 'property_translation.name', $this->name]);
+        $query->andFilterWhere(['like', 'property_translation.label', $this->label]);
 
 
         return $dataProvider;

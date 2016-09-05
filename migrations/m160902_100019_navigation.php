@@ -1,6 +1,7 @@
 <?php
 
 use app\helpers\PermissionsHelper;
+use app\models\NavigationTranslation;
 use yii\db\Migration;
 
 class m160902_100019_navigation extends Migration
@@ -36,21 +37,14 @@ class m160902_100019_navigation extends Migration
                 'packed_json_params' => $this->text(),
                 'css_class' => $this->string(),
                 'rbac_check' => $this->string(),
+                'context_id' => $this->integer()->notNull(),
                 'sort_order' => $this->integer()->notNull()->defaultValue(0),
                 'active' => $this->integer(1)->unsigned()->notNull()->defaultValue(1),
                 'is_deleted' => $this->integer(1)->unsigned()->notNull()->defaultValue(0)
-            ]
+            ],
+            $tableOptions
         );
 
-        $this->createIndex(
-            'navigation_parent_id',
-            '{{%navigation%}}',
-            [
-                'parent_id',
-                'active',
-                'is_deleted'
-            ]
-        );
 
         // translations
         $this->createTable(
@@ -63,12 +57,30 @@ class m160902_100019_navigation extends Migration
             $tableOptions
         );
 
+        $this->addPrimaryKey(
+            'pk-navigation_translation-model_id-language_id',
+            NavigationTranslation::tableName(),
+            ['model_id', 'language_id']
+        );
+
+        $this->createIndex(
+            'ix-navigation-parent_id-active-is_deleted',
+            '{{%navigation%}}',
+            [
+                'parent_id',
+                'active',
+                'is_deleted'
+            ],
+            false
+        );
+
         $this->addForeignKey(
-            'fkNavigationT',
+            'fk-navigation_translation-model_id',
             '{{%navigation_translation}}',
             ['model_id'],
             '{{%navigation}}',
             ['id'],
+            'CASCADE',
             'CASCADE'
         );
         PermissionsHelper::createPermissions(self::$permissionsConfig);
