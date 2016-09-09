@@ -1,0 +1,60 @@
+typography:
+  base-font-size: 1rem
+  base-line-height: 0.625rem
+  font-family: "'Helvetica Neue', Helvetica, Arial, sans-serif"
+  type-settings:
+    smallest-text:
+      font-size: 0.75rem
+      line-height: 1.25rem
+    small-text:
+      font-size: 0.875rem
+      line-height: 1.25rem
+    text-bold:
+      font-size: 0.875rem
+      font-size-desktop-wide: 1rem
+      line-height: 1.25rem
+      font-weight: 700
+    text:
+      font-size: 0.875rem
+      font-size-desktop-wide: 1rem
+      line-height: 1.25rem
+    accent-text:
+      font-size: 1rem
+      font-size-desktop: 1.1875rem
+      line-height: 1.25rem
+    section:
+      font-size: 1.1875rem
+      font-size-desktop: 1.5rem
+      line-height: 1.25rem
+      line-height-desktop-wide: 1.875rem
+    sub-heading:
+      font-size: 1.5rem
+      font-size-desktop: 1.625rem
+      font-size-desktop-wide: 1.875rem
+      line-height: 1.875rem
+    heading:
+      font-size: 1.75rem
+      font-size-desktop: 2.25rem
+      font-size-desktop-wide: 2.5rem
+      line-height: 1.875rem
+      line-height-desktop-wide: 2.5rem
+    heading-test:
+      font-size: 1.75rem
+      font-size-desktop: 2.25rem
+      font-size-desktop-wide: 2.5rem
+      line-height: 1.875rem
+      line-height-desktop-wide: 2.5rem
+      font-weight: 500
+    heading-bold:
+      font-size: 1.75rem
+      font-size-desktop: 2.25rem
+      font-size-desktop-wide: 2.5rem
+      line-height: 1.875rem
+      line-height-desktop-wide: 2.5rem
+      font-weight: 500
+    slider-heading:
+      font-size: 1.75rem
+      font-size-desktop: 2.25rem
+      font-size-desktop-wide: 3.5rem
+      line-height: 1.875rem
+      line-height-desktop-wide: 3.75rem
