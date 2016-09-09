@@ -36,10 +36,6 @@ $config = [
                 'debug/default',
             ],
             'rules' => [
-//                '' => 'site/index',
-                [
-                    'class' => 'DotPlant\EntityStructure\components\StructureUrlRule',
-                ],
             ],
             'scriptUrl' => '',
             'baseUrl' => '',
