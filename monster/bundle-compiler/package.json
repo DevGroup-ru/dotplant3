@@ -8,7 +8,7 @@
     "build": "node_modules/.bin/webpack",
     "start": "ENV=dev node_modules/.bin/webpack",
     "test": "npm run build",
-    "dev-server": "ENV=dev node_modules/.bin/webpack-dev-server --host 0.0.0.0",
+    "dev-server": "ENV=dev node_modules/.bin/webpack-dev-server",
     "dev": "ENV=dev npm install && npm run build && npm run dev-server",
     "watch": "ENV=dev node_modules/.bin/webpack --watch"
   },

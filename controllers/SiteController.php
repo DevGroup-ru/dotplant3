@@ -31,17 +31,6 @@ class SiteController extends FrontendController
         ];
     }
 
-    public function actionUn()
-    {
-        yii\helpers\FileHelper::removeDirectory(Yii::getAlias('@app/monster/'));
-        /** @var Repository $repository */
-        $repository = Yii::$app->monsterRepository;
-        $repository->reloadBundles();
-
-
-        return $this->renderContent(VarDumper::dumpAsString($repository->bundles, 6, true));
-    }
-
     public function actionIndex()
     {
 //        $annotator = new Annotator();

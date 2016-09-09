@@ -2,6 +2,9 @@
 
 namespace app\modules\admin\controllers;
 
+use DevGroup\Frontend\helpers\RequestHelper;
+use Yii;
+use yii\caching\Cache;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 
@@ -38,4 +41,12 @@ class DashboardController extends Controller
     {
         return $this->render('index');
     }
+
+    public function actionClearCache()
+    {
+        RequestHelper::allowAjaxOnly();
+        RequestHelper::allowOnlyJsonRequest();
+        return Yii::$app->cache->flush();
+    }
+
 }
