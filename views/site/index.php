@@ -13,6 +13,12 @@ use yii\helpers\Url;
 
 $this->title = 'Главная страница';
 
+$page = DotPlant\EntityStructure\models\BaseStructure::findOne(
+    [
+        'slug' => 'universal',
+        'context_id' => Yii::$app->multilingual->context_id,
+    ]
+);
 
 ?>
     index
@@ -43,5 +49,5 @@ $this->title = 'Главная страница';
 */
 
 echo Html::a("Test page 1", ['/universal/show', 'entities' => [
-    'app\models\Page' => [1],
+    'DotPlant\EntityStructure\models\BaseStructure' => [$page !== null ? $page->id : 1],
 ]]);

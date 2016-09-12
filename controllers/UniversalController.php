@@ -23,7 +23,7 @@ class UniversalController extends FrontendController
                     [
                         'class' => FillEntities::class,
                         'entitiesMapping' => [
-                            'app\models\Page' => 'page',
+                            'DotPlant\EntityStructure\models\BaseStructure' => 'page',
                         ],
                     ],
                     [
