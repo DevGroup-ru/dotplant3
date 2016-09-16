@@ -6,7 +6,7 @@ $config = [
         '@yii/rbac/migrations/',
         '@DevGroup/ExtensionsManager/migrations',
         '@DevGroup/Measure/migrations',
-        '@DevGroup/Multilingual/migrations'
+        '@DevGroup/Multilingual/migrations',
     ],
     'icon-framework' => 'fa',
     'PolyglotTranslationPath' => '@app/messages/polyglot.js',

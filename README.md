@@ -14,4 +14,5 @@ Installation
     * Change a domain in `config/languages/Context.php` and `config/languages/Language.php` if needs;
     * Create a new domain configuration at your web server and set `webroot` as `/path/to/dotplant3/web`.
 5. Run migrations `./yii migrate`
+6. Run a extensions activation process `./activate.sh`
 7. Open a site in you browser `http://dotplant3.dev`
