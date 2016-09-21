@@ -15,6 +15,7 @@ $config = [
     ],
     'uploadPath' => '@webroot/files/',
     'admin.layout' => '@app/views/layouts/admin',
+    'modelSortPermission' => [], // array of model class names available to sorting in the next format: ['app\models\AwesomeModel' => 'permission-name',]
 ];
 
 $generatedConfig = __DIR__ . '/generated/params-generated.php';
