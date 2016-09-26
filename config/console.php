@@ -39,7 +39,7 @@ $config = ArrayHelper::merge($config, require(__DIR__ . DIRECTORY_SEPARATOR . 'c
 
 $configsToMerge = [
     'generated/console-generated.php',
-    '../modules/theme/site/console.php',
+    '../modules/site/console.php',
     'console-local.php',
 ];
 foreach ($configsToMerge as $file) {
