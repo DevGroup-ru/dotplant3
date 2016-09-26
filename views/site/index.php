@@ -15,7 +15,7 @@ $this->title = 'Главная страница';
 
 $page = DotPlant\EntityStructure\models\BaseStructure::findOne(
     [
-        'slug' => 'universal',
+        'slug' => 'dp3-monster-demo-page',
         'context_id' => Yii::$app->multilingual->context_id,
     ]
 );
