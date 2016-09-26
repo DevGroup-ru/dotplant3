@@ -76,12 +76,11 @@ $config = ArrayHelper::merge($config, require(__DIR__ . DIRECTORY_SEPARATOR . 'c
 // merge other configs
 $configsToMerge = [
     'generated/web-generated.php',
+    '../modules/site/config/web.php',
     'web-local.php',
 ];
-
 foreach ($configsToMerge as $file) {
     $file = __DIR__ . DIRECTORY_SEPARATOR . $file;
-
     if (file_exists($file)) {
         $config = ArrayHelper::merge($config, require($file));
     }

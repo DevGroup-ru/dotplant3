@@ -37,9 +37,16 @@ if (YII_ENV_DEV) {
 // merge common config
 $config = ArrayHelper::merge($config, require(__DIR__ . DIRECTORY_SEPARATOR . 'common.php'));
 
-$generatedConfig = __DIR__ . '/generated/console-generated.php';
-if (file_exists($generatedConfig)) {
-    $config = \yii\helpers\ArrayHelper::merge($config, require($generatedConfig));
+$configsToMerge = [
+    'generated/console-generated.php',
+    '../modules/theme/site/console.php',
+    'console-local.php',
+];
+foreach ($configsToMerge as $file) {
+    $file = __DIR__ . DIRECTORY_SEPARATOR . $file;
+    if (file_exists($file)) {
+        $config = ArrayHelper::merge($config, require($file));
+    }
 }
 
 return $config;

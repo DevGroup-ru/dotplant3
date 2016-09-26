@@ -109,13 +109,18 @@ $config = [
     ],
     'params' => require(__DIR__ . '/params.php'),
 ];
-$generatedConfig = __DIR__ . '/generated/common-generated.php';
-if (file_exists($generatedConfig)) {
-    $config = \yii\helpers\ArrayHelper::merge($config, require($generatedConfig));
-}
-$localConfig = __DIR__ . DIRECTORY_SEPARATOR . 'common-local.php';
-if (file_exists($localConfig)) {
-    $config = \yii\helpers\ArrayHelper::merge($config, require($localConfig));
+
+// merge configs
+$configsToMerge = [
+    'generated/common-generated.php',
+    '../modules/site/config/common.php',
+    'common-local.php',
+];
+foreach ($configsToMerge as $file) {
+    $file = __DIR__ . DIRECTORY_SEPARATOR . $file;
+    if (file_exists($file)) {
+        $config = \yii\helpers\ArrayHelper::merge($config, require($file));
+    }
 }
 $aliasesConfig = __DIR__ . DIRECTORY_SEPARATOR . 'generated/aliases-generated.php';
 if (true === file_exists($aliasesConfig)) {
