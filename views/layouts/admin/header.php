@@ -27,9 +27,15 @@ use yii\helpers\Html;
                     </a>
                 </li>
                 <li>
-                    <a href="#clear-monster" onclick="jQuery.post('/admin/dashboard/clear-monster', {}, function (data) {alert(data);}, 'json'); return false;" title="Clear monster">
+                    <a href="#clear-monster" onclick="jQuery.post('/monster/bundles/clear-cache', {}, function (data) {alert(data);}, 'json'); return false;" title="Clear monster">
                         <i class="fa fa-eraser"></i>
                         <span class="label label-success"><i class="fa fa-paw"></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#clear-monster" onclick="jQuery.post('/monster/bundles/reload-bundles', {}, function (data) {alert(data);}, 'json'); return false;" title="Clear monster">
+                        <i class="fa fa-archive"></i>
+                        <span class="label label-success"><i class="fa fa-refresh"></i></span>
                     </a>
                 </li>
                 <li>

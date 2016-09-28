@@ -53,17 +53,6 @@ class DashboardController extends Controller
         return $this->flushCache();
     }
 
-    public function actionClearMonster()
-    {
-        RequestHelper::allowAjaxOnly();
-        RequestHelper::allowOnlyJsonRequest();
-        FileHelper::removeDirectory(Yii::getAlias('@app/monster/'));
-        /** @var Repository $repository */
-        $repository = Yii::$app->monsterRepository;
-        $repository->reloadBundles();
-        return Yii::t('app', 'Monster has been cleaned');
-    }
-
     public function actionClearAssets()
     {
         RequestHelper::allowAjaxOnly();
