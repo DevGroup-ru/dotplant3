@@ -48,6 +48,16 @@ ln -s ../../../monster vendor/dotplant/monster
 rm -rf vendor/dotplant/content
 ln -s ../../../dotplant-content vendor/dotplant/content
 
+rm -rf vendor/dotplant/store
+ln -s ../../../dotplant-store vendor/dotplant/store
+
+rm -rf vendor/dotplant/emails
+ln -s ../../../dotplant-emails vendor/dotplant/emails
+
+rm -rf vendor/dotplant/currencies
+ln -s ../../../dotplant-currencies vendor/dotplant/currencies
+
+
 rm -rf vendor/dotplant/entity-structure
 ln -s ../../../dotplant-entity-structure vendor/dotplant/entity-structure
 

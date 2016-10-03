@@ -16,6 +16,7 @@ import WriteFilePlugin from 'write-file-webpack-plugin';
 import thePostCSS from 'postcss';
 import postAssets from 'postcss-assets';
 import fs from 'fs';
+import path from 'path';
 import commandLineArgs from 'command-line-args';
 
 const optionDefinitions = [
@@ -51,6 +52,7 @@ const bootstrapImporter = thePostCSS.plugin('bootstrapImporter', () =>
         name: 'import',
         params: `"${path}`,
       });
+
       rule.replaceWith(node);
     });
 
@@ -123,14 +125,19 @@ module.exports = {
   output,
   plugins,
   resolve: {
-    root: [
-      fs.realpathSync('./'),
-    ],
+     root: path.resolve(__dirname, '..', 'node_modules'),
+    // root: [
+    //   fs.realpathSync('./'),
+    // ],
+    fallback: path.resolve(__dirname, '..', 'node_modules'),
   },
   resolveLoader: {
-    root: [
-      fs.realpathSync('./node_modules/'),
-    ],
+    root: path.resolve(__dirname, 'node_modules'),
+
+    // root: [
+    //   fs.realpathSync('./node_modules/'),
+    // ],
+    fallback: path.resolve(__dirname, '..', 'node_modules'),
   },
   module: {
     loaders: [
@@ -141,6 +148,14 @@ module.exports = {
         query: {
           // plugins: ['transform-runtime'],
           cacheDirectory: true,
+
+          presets: [
+            'babel-preset-latest',
+            'babel-preset-es2015',
+            'babel-preset-es2016',
+            'babel-preset-es2017',
+          ].map(require.resolve),
+
         },
       },
       {
