@@ -28,3 +28,4 @@ phpunit.phar
 /monster/cache
 /monster/templates
 /monster/bundles
+web/files/*
