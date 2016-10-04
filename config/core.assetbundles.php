@@ -17,7 +17,7 @@ return [
             'https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js',
         ],
         'css' => [
-            'https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/theme.min.css',
+            'https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css',
         ],
         'jsOptions' => [
             'position' => View::POS_HEAD,
