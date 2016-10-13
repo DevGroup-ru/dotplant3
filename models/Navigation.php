@@ -9,9 +9,11 @@ use DevGroup\Multilingual\behaviors\MultilingualActiveRecord;
 use DevGroup\Multilingual\traits\MultilingualTrait;
 use DevGroup\TagDependencyHelper\CacheableActiveRecord;
 use DevGroup\TagDependencyHelper\TagDependencyTrait;
+use DotPlant\EntityStructure\models\BaseStructure;
 use Yii;
 use yii\caching\TagDependency;
 use yii\data\ActiveDataProvider;
+use yii\helpers\Url;
 
 /**
  * This is the model class for table "{{%navigation}}".
@@ -144,13 +146,13 @@ class Navigation extends \yii\db\ActiveRecord
     public static function getNavigation($parent_id = 0)
     {
         $cacheKey = 'Navigation:menuItems:' . implode(
-            ':',
-            [
-                Yii::$app->language,
-                Yii::$app->multilingual->context_id,
-                $parent_id
-            ]
-        ) ;
+                ':',
+                [
+                    Yii::$app->language,
+                    Yii::$app->multilingual->context_id,
+                    $parent_id
+                ]
+            );
 
         if (false === $items = Yii::$app->cache->get($cacheKey)) {
             $items = (array)self::getTree($parent_id);
@@ -193,8 +195,8 @@ class Navigation extends \yii\db\ActiveRecord
                      ->where(
                          [
                              'parent_id' => $parent_id,
-                             'active'=> 1,
-                             'is_deleted'=>0
+                             'active' => 1,
+                             'is_deleted' => 0
                          ]
                      )->orderBy('sort_order')
                      ->asArray()->all() as $item) {
@@ -202,7 +204,12 @@ class Navigation extends \yii\db\ActiveRecord
             if (empty($item['url']) === false) {
                 $url = $item['url'];
             } elseif (empty($item['structure_id']) === false) {
-               /*@todo $url by structure_id **/
+                $url = Url::to([
+                    '/universal/show',
+                    'entities' => [
+                        BaseStructure::class => $item['structure_id']
+                    ]
+                ]);
             }
             $items[] = [
                 'label' => $item['defaultTranslation']['label'],

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3654c48871e506a9bdfbccf99e48cdb9",
-    "content-hash": "96d8f357cc660da8a0f265341302e624",
+    "hash": "7bc9cca2ff6166a2c889b8b578a1069a",
+    "content-hash": "157b7fb34800ea3e1b38353c214800a1",
     "packages": [
         {
             "name": "2amigos/yii2-transliterator-helper",
@@ -464,12 +464,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/lipis/flag-icon-css.git",
-                "reference": "482453013e72ca7738564c584985f3b65f3d5916"
+                "reference": "aaa803992975d79e6f9703303306eac7232c1f54"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lipis/flag-icon-css/zipball/482453013e72ca7738564c584985f3b65f3d5916",
-                "reference": "482453013e72ca7738564c584985f3b65f3d5916",
+                "url": "https://api.github.com/repos/lipis/flag-icon-css/zipball/aaa803992975d79e6f9703303306eac7232c1f54",
+                "reference": "aaa803992975d79e6f9703303306eac7232c1f54",
                 "shasum": ""
             },
             "type": "component",
@@ -494,7 +494,7 @@
                 }
             ],
             "description": "CSS for vector based country flags",
-            "time": "2016-09-30 09:17:31"
+            "time": "2016-10-05 09:11:41"
         },
         {
             "name": "creocoder/yii2-flysystem",
@@ -729,12 +729,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/DevGroup-ru/yii2-data-structure-tools.git",
-                "reference": "6c869858b7e82560b4c16ed044e5b2935550e547"
+                "reference": "26c5c59e73ff1ddb94b5f07d61b58f9f616d1792"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DevGroup-ru/yii2-data-structure-tools/zipball/6c869858b7e82560b4c16ed044e5b2935550e547",
-                "reference": "6c869858b7e82560b4c16ed044e5b2935550e547",
+                "url": "https://api.github.com/repos/DevGroup-ru/yii2-data-structure-tools/zipball/26c5c59e73ff1ddb94b5f07d61b58f9f616d1792",
+                "reference": "26c5c59e73ff1ddb94b5f07d61b58f9f616d1792",
                 "shasum": ""
             },
             "require": {
@@ -800,7 +800,7 @@
                 "tree",
                 "yii2"
             ],
-            "time": "2016-09-05 07:55:20"
+            "time": "2016-10-05 06:24:22"
         },
         {
             "name": "devgroup/yii2-deferred-tasks",
@@ -970,12 +970,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/DevGroup-ru/yii2-extensions-manager.git",
-                "reference": "a54f31935bb7ed492c9ec9f70b9ccb9dff50af6a"
+                "reference": "e54e88b7c76da000c3e5da73208891ae8983c6f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DevGroup-ru/yii2-extensions-manager/zipball/a54f31935bb7ed492c9ec9f70b9ccb9dff50af6a",
-                "reference": "a54f31935bb7ed492c9ec9f70b9ccb9dff50af6a",
+                "url": "https://api.github.com/repos/DevGroup-ru/yii2-extensions-manager/zipball/e54e88b7c76da000c3e5da73208891ae8983c6f5",
+                "reference": "e54e88b7c76da000c3e5da73208891ae8983c6f5",
                 "shasum": ""
             },
             "require": {
@@ -1032,7 +1032,7 @@
                 "plugins",
                 "yii2"
             ],
-            "time": "2016-09-30 07:49:43"
+            "time": "2016-10-04 06:34:08"
         },
         {
             "name": "devgroup/yii2-frontend-utils",
@@ -1322,12 +1322,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/DevGroup-ru/yii2-media-storage.git",
-                "reference": "88e99fbc2e2ec3692b18c0596ead089728dab4d8"
+                "reference": "58bcc5f31a3b20bfc0d29aa3e4b47523502dbb7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DevGroup-ru/yii2-media-storage/zipball/88e99fbc2e2ec3692b18c0596ead089728dab4d8",
-                "reference": "88e99fbc2e2ec3692b18c0596ead089728dab4d8",
+                "url": "https://api.github.com/repos/DevGroup-ru/yii2-media-storage/zipball/58bcc5f31a3b20bfc0d29aa3e4b47523502dbb7e",
+                "reference": "58bcc5f31a3b20bfc0d29aa3e4b47523502dbb7e",
                 "shasum": ""
             },
             "require": {
@@ -1394,7 +1394,7 @@
                 "extension",
                 "yii2"
             ],
-            "time": "2016-08-31 08:19:31"
+            "time": "2016-10-05 12:15:21"
         },
         {
             "name": "devgroup/yii2-multilingual",
@@ -1785,12 +1785,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/DevGroup-ru/dotplant-content.git",
-                "reference": "703dddeb0d738b8a2289d4f83ba051ee3692177e"
+                "reference": "a94c0f7b63ac4b1a8805ff7fbae37810529da0aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DevGroup-ru/dotplant-content/zipball/703dddeb0d738b8a2289d4f83ba051ee3692177e",
-                "reference": "703dddeb0d738b8a2289d4f83ba051ee3692177e",
+                "url": "https://api.github.com/repos/DevGroup-ru/dotplant-content/zipball/a94c0f7b63ac4b1a8805ff7fbae37810529da0aa",
+                "reference": "a94c0f7b63ac4b1a8805ff7fbae37810529da0aa",
                 "shasum": ""
             },
             "require": {
@@ -1848,7 +1848,7 @@
                 "page",
                 "yii2"
             ],
-            "time": "2016-09-26 09:00:41"
+            "time": "2016-10-03 14:22:21"
         },
         {
             "name": "dotplant/entity-structure",
@@ -1856,12 +1856,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/DevGroup-ru/dotplant-entity-structure.git",
-                "reference": "3c6be8d18082fdb1acf0fe2bd1a2b57b571ea192"
+                "reference": "fd2080c5cbd5752bf77047e64157d82a14ac4929"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DevGroup-ru/dotplant-entity-structure/zipball/3c6be8d18082fdb1acf0fe2bd1a2b57b571ea192",
-                "reference": "3c6be8d18082fdb1acf0fe2bd1a2b57b571ea192",
+                "url": "https://api.github.com/repos/DevGroup-ru/dotplant-entity-structure/zipball/fd2080c5cbd5752bf77047e64157d82a14ac4929",
+                "reference": "fd2080c5cbd5752bf77047e64157d82a14ac4929",
                 "shasum": ""
             },
             "require": {
@@ -1916,7 +1916,7 @@
                 "structure",
                 "yii2"
             ],
-            "time": "2016-09-29 09:26:16"
+            "time": "2016-10-03 14:20:26"
         },
         {
             "name": "dotplant/monster",
@@ -1924,12 +1924,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/DevGroup-ru/dotplant-monster.git",
-                "reference": "fa879a5587c2850313c3bd0035b62db83883dbb8"
+                "reference": "0934e3ebd950cf5627e6edd11f28eb68ddca733e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DevGroup-ru/dotplant-monster/zipball/fa879a5587c2850313c3bd0035b62db83883dbb8",
-                "reference": "fa879a5587c2850313c3bd0035b62db83883dbb8",
+                "url": "https://api.github.com/repos/DevGroup-ru/dotplant-monster/zipball/0934e3ebd950cf5627e6edd11f28eb68ddca733e",
+                "reference": "0934e3ebd950cf5627e6edd11f28eb68ddca733e",
                 "shasum": ""
             },
             "require": {
@@ -1942,7 +1942,8 @@
             },
             "require-dev": {
                 "devgroup/dotplant-dev": "~1.0",
-                "dmstr/yii2-migrate-command": "^0.3.1"
+                "dmstr/yii2-migrate-command": "^0.3.1",
+                "yiisoft/yii2-coding-standards": "~2.0.0"
             },
             "type": "dotplant-extension",
             "extra": {
@@ -1975,7 +1976,7 @@
                 }
             ],
             "description": "Here be monsters",
-            "time": "2016-09-28 13:02:36"
+            "time": "2016-10-05 07:52:49"
         },
         {
             "name": "elasticsearch/elasticsearch",
@@ -2863,12 +2864,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "f2ccd52d8e8a271fb340f6636e01d24673e8087b"
+                "reference": "28c3de5e2c6b723492f9e59ed7fb5e9719a00a2b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/f2ccd52d8e8a271fb340f6636e01d24673e8087b",
-                "reference": "f2ccd52d8e8a271fb340f6636e01d24673e8087b",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/28c3de5e2c6b723492f9e59ed7fb5e9719a00a2b",
+                "reference": "28c3de5e2c6b723492f9e59ed7fb5e9719a00a2b",
                 "shasum": ""
             },
             "require": {
@@ -2938,7 +2939,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2016-08-26 20:18:09"
+            "time": "2016-10-05 21:27:21"
         },
         {
             "name": "league/flysystem-cached-adapter",
@@ -3440,12 +3441,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Studio-42/elFinder.git",
-                "reference": "dfceea7377bd15e846451d16b7b13450c10ecc2a"
+                "reference": "9c37075c1aa73b9c01b0b96eded0477db9197c12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Studio-42/elFinder/zipball/dfceea7377bd15e846451d16b7b13450c10ecc2a",
-                "reference": "dfceea7377bd15e846451d16b7b13450c10ecc2a",
+                "url": "https://api.github.com/repos/Studio-42/elFinder/zipball/9c37075c1aa73b9c01b0b96eded0477db9197c12",
+                "reference": "9c37075c1aa73b9c01b0b96eded0477db9197c12",
                 "shasum": ""
             },
             "require": {
@@ -3490,7 +3491,7 @@
             ],
             "description": "File manager for web",
             "homepage": "http://elfinder.org",
-            "time": "2016-10-02 13:06:58"
+            "time": "2016-10-06 03:03:35"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -3649,6 +3650,32 @@
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
             "time": "2016-07-28 11:13:34"
+        },
+        {
+            "name": "theme/narkology",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "/var/www/dotplantTehemes/narkology",
+                "reference": "70b6238b7db4c268e140889d71e48b16f1bf590b",
+                "shasum": null
+            },
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "theme\\narkology\\": "./"
+                }
+            },
+            "license": [
+                "Private"
+            ],
+            "authors": [
+                {
+                    "name": "dmitriy",
+                    "email": "hector.tmb@gmail.com"
+                }
+            ],
+            "description": "narkology theme"
         },
         {
             "name": "unclead/yii2-multiple-input",
@@ -3910,12 +3937,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "36f940e182f69e29a3bd06bb13ee19bc8defbe89"
+                "reference": "3915bc568ae72f245e56a8633123a685601f86ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/36f940e182f69e29a3bd06bb13ee19bc8defbe89",
-                "reference": "36f940e182f69e29a3bd06bb13ee19bc8defbe89",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/3915bc568ae72f245e56a8633123a685601f86ac",
+                "reference": "3915bc568ae72f245e56a8633123a685601f86ac",
                 "shasum": ""
             },
             "require": {
@@ -3996,7 +4023,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2016-10-01 19:04:52"
+            "time": "2016-10-05 09:01:15"
         },
         {
             "name": "yiisoft/yii2-authclient",
@@ -4885,12 +4912,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-file-iterator.git",
-                "reference": "6150bf2c35d3fc379e50c7602b75caceaa39dbf0"
+                "reference": "3cc8f69b3028d0f96a9078e6295d86e9bf019be5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-file-iterator/zipball/6150bf2c35d3fc379e50c7602b75caceaa39dbf0",
-                "reference": "6150bf2c35d3fc379e50c7602b75caceaa39dbf0",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-file-iterator/zipball/3cc8f69b3028d0f96a9078e6295d86e9bf019be5",
+                "reference": "3cc8f69b3028d0f96a9078e6295d86e9bf019be5",
                 "shasum": ""
             },
             "require": {
@@ -4924,7 +4951,7 @@
                 "filesystem",
                 "iterator"
             ],
-            "time": "2015-06-21 13:08:43"
+            "time": "2016-10-03 07:40:28"
         },
         {
             "name": "phpunit/php-text-template",
@@ -5017,12 +5044,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-token-stream.git",
-                "reference": "cab6c6fefee93d7b7c3a01292a0fe0884ea66644"
+                "reference": "2ef59c57cd196301eeb88865d25916898dd72872"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/cab6c6fefee93d7b7c3a01292a0fe0884ea66644",
-                "reference": "cab6c6fefee93d7b7c3a01292a0fe0884ea66644",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/2ef59c57cd196301eeb88865d25916898dd72872",
+                "reference": "2ef59c57cd196301eeb88865d25916898dd72872",
                 "shasum": ""
             },
             "require": {
@@ -5058,7 +5085,7 @@
             "keywords": [
                 "tokenizer"
             ],
-            "time": "2015-09-23 14:46:55"
+            "time": "2016-10-03 07:38:46"
         },
         {
             "name": "phpunit/phpunit",
@@ -5066,12 +5093,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "d99e588e3cbab28db86f8da22e22c72d8cc38543"
+                "reference": "7b58ff0d8996b56675a3e05dcd563e0a4f244935"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/d99e588e3cbab28db86f8da22e22c72d8cc38543",
-                "reference": "d99e588e3cbab28db86f8da22e22c72d8cc38543",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/7b58ff0d8996b56675a3e05dcd563e0a4f244935",
+                "reference": "7b58ff0d8996b56675a3e05dcd563e0a4f244935",
                 "shasum": ""
             },
             "require": {
@@ -5130,7 +5157,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2016-09-22 17:37:27"
+            "time": "2016-10-03 13:00:58"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -5194,12 +5221,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/comparator.git",
-                "reference": "937efb279bd37a375bcadf584dec0726f84dbf22"
+                "reference": "21400bd9503c3782f5ee80349117483dcf8cec3f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/937efb279bd37a375bcadf584dec0726f84dbf22",
-                "reference": "937efb279bd37a375bcadf584dec0726f84dbf22",
+                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/21400bd9503c3782f5ee80349117483dcf8cec3f",
+                "reference": "21400bd9503c3782f5ee80349117483dcf8cec3f",
                 "shasum": ""
             },
             "require": {
@@ -5250,7 +5277,7 @@
                 "compare",
                 "equality"
             ],
-            "time": "2015-07-26 15:48:44"
+            "time": "2016-10-03 07:45:42"
         },
         {
             "name": "sebastian/diff",
@@ -5258,12 +5285,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/diff.git",
-                "reference": "13edfd8706462032c2f52b4b862974dd46b71c9e"
+                "reference": "d0814318784b7756fb932116acd19ee3b0cbe67a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/13edfd8706462032c2f52b4b862974dd46b71c9e",
-                "reference": "13edfd8706462032c2f52b4b862974dd46b71c9e",
+                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/d0814318784b7756fb932116acd19ee3b0cbe67a",
+                "reference": "d0814318784b7756fb932116acd19ee3b0cbe67a",
                 "shasum": ""
             },
             "require": {
@@ -5302,7 +5329,7 @@
             "keywords": [
                 "diff"
             ],
-            "time": "2015-12-08 07:14:41"
+            "time": "2016-10-03 07:45:03"
         },
         {
             "name": "sebastian/environment",
@@ -5360,12 +5387,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/exporter.git",
-                "reference": "42c4c2eec485ee3e159ec9884f95b431287edde4"
+                "reference": "7dfcd2418aacbdb5e123fb23ac735acfdd6c588d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/42c4c2eec485ee3e159ec9884f95b431287edde4",
-                "reference": "42c4c2eec485ee3e159ec9884f95b431287edde4",
+                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/7dfcd2418aacbdb5e123fb23ac735acfdd6c588d",
+                "reference": "7dfcd2418aacbdb5e123fb23ac735acfdd6c588d",
                 "shasum": ""
             },
             "require": {
@@ -5419,7 +5446,7 @@
                 "export",
                 "exporter"
             ],
-            "time": "2016-06-17 09:04:28"
+            "time": "2016-10-03 07:44:30"
         },
         {
             "name": "sebastian/global-state",
@@ -5478,12 +5505,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/recursion-context.git",
-                "reference": "7ff5b1b3dcc55b8ab8ae61ef99d4730940856ee7"
+                "reference": "b19cc3298482a335a95f3016d2f8a6950f0fbcd7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/recursion-context/zipball/7ff5b1b3dcc55b8ab8ae61ef99d4730940856ee7",
-                "reference": "7ff5b1b3dcc55b8ab8ae61ef99d4730940856ee7",
+                "url": "https://api.github.com/repos/sebastianbergmann/recursion-context/zipball/b19cc3298482a335a95f3016d2f8a6950f0fbcd7",
+                "reference": "b19cc3298482a335a95f3016d2f8a6950f0fbcd7",
                 "shasum": ""
             },
             "require": {
@@ -5523,7 +5550,7 @@
             ],
             "description": "Provides functionality to recursively process PHP variables",
             "homepage": "http://www.github.com/sebastianbergmann/recursion-context",
-            "time": "2016-01-28 05:39:29"
+            "time": "2016-10-03 07:41:43"
         },
         {
             "name": "sebastian/version",
@@ -5716,12 +5743,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-debug.git",
-                "reference": "17658ab8eb4981dad0891a9b09fda786d140be3b"
+                "reference": "9b500147dea14376cbd07550ba3c42d3f578055f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/17658ab8eb4981dad0891a9b09fda786d140be3b",
-                "reference": "17658ab8eb4981dad0891a9b09fda786d140be3b",
+                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/9b500147dea14376cbd07550ba3c42d3f578055f",
+                "reference": "9b500147dea14376cbd07550ba3c42d3f578055f",
                 "shasum": ""
             },
             "require": {
@@ -5755,7 +5782,7 @@
                 "debugger",
                 "yii2"
             ],
-            "time": "2016-09-05 10:57:44"
+            "time": "2016-10-05 07:05:03"
         },
         {
             "name": "yiisoft/yii2-faker",
@@ -5865,6 +5892,7 @@
         "devgroup/yii2-users-module": 20,
         "devgroup/yii2-data-structure-tools": 20,
         "devgroup/yii2-events-system": 20,
+        "theme/narkology": 20,
         "devgroup/dotplant-dev": 20
     },
     "prefer-stable": false,

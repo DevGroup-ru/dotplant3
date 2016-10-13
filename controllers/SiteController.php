@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\models\Navigation;
 use DevGroup\DeferredTasks\actions\ReportQueueItem;
 use DevGroup\DeferredTasks\helpers\DeferredHelper;
 use DevGroup\DeferredTasks\helpers\ReportingTask;
@@ -33,6 +34,12 @@ class SiteController extends FrontendController
 
     public function actionIndex()
     {
+
+        $dd = Navigation::getNavigation(0);
+
+        $dd = 1;
+
+
 //        $annotator = new Annotator();
 //        $tree = $annotator->annotate(
 //            'toolkit.scss',

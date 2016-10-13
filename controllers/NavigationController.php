@@ -4,9 +4,9 @@ namespace app\controllers;
 use app\models\Navigation;
 use DevGroup\AdminUtils\controllers\BaseController;
 use DevGroup\AdminUtils\traits\BackendRedirect;
+use devgroup\JsTreeWidget\actions\AdjacencyList\FullTreeDataAction;
 use devgroup\JsTreeWidget\actions\AdjacencyList\TreeNodeMoveAction;
 use devgroup\JsTreeWidget\actions\AdjacencyList\TreeNodesReorderAction;
-use DotPlant\EntityStructure\actions\BaseEntityTreeAction;
 use yii\filters\AccessControl;
 use yii\filters\VerbFilter;
 use yii\web\ForbiddenHttpException;
@@ -66,9 +66,9 @@ class NavigationController extends BaseController
     {
         return [
             'getTree' => [
-                'class' => BaseEntityTreeAction::class,
+                'class' => FullTreeDataAction::class,
                 'className' => Navigation::class,
-                'modelLabelAttribute' => 'label'
+                'modelLabelAttribute' => 'defaultTranslation.label',
             ],
             'menuReorder' => [
                 'class' => TreeNodesReorderAction::class,
