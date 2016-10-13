@@ -26,7 +26,9 @@ class NavigationProvider extends DataEntityProvider
     {
         return [
             $this->regionKey => [
-                $this->materialKey => Navigation::getNavigation($this->parentId)
+                $this->materialKey => [
+                    'menu' => Navigation::getNavigation($this->parentId)
+                ]
             ]
         ];
     }
