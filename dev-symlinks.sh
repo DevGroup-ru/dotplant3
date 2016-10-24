@@ -21,7 +21,7 @@ for Package in ${DEVGROUP_PACKAGES}
 do
     cd ../${Package}
     echo "Updating git $Package"
-    git pull
+    #git pull
 done
 
 cd ${CURRENT_DIRECTORY}
@@ -31,7 +31,7 @@ do
     rm -rf vendor/devgroup/${Package}
 done
 
-composer update -vvv
+#composer update -vvv
 
 for Package in ${DEVGROUP_PACKAGES}
 do

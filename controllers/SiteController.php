@@ -32,7 +32,7 @@ class SiteController extends FrontendController
         ];
     }
 
-    public function actionIndex()
+    public function actionIndex1()
     {
 
         $dd = Navigation::getNavigation(0);

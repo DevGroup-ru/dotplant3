@@ -125,11 +125,11 @@ module.exports = {
   output,
   plugins,
   resolve: {
-     root: path.resolve(__dirname, '..', 'node_modules'),
+     root: path.resolve(__dirname, 'node_modules'),
     // root: [
     //   fs.realpathSync('./'),
     // ],
-    fallback: path.resolve(__dirname, '..', 'node_modules'),
+    fallback: path.resolve(__dirname, 'node_modules'),
   },
   resolveLoader: {
     root: path.resolve(__dirname, 'node_modules'),
@@ -137,7 +137,7 @@ module.exports = {
     // root: [
     //   fs.realpathSync('./node_modules/'),
     // ],
-    fallback: path.resolve(__dirname, '..', 'node_modules'),
+    fallback: path.resolve(__dirname, 'node_modules'),
   },
   module: {
     loaders: [

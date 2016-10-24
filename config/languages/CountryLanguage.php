@@ -1,5 +1,8 @@
 <?php
-
+$siteConfig = __DIR__ . '/../../modules/site/config/languages/CountryLanguage.php';
+if (file_exists($siteConfig)) {
+    return include($siteConfig);
+}
 return [
     1 => [
         'id' => 1,

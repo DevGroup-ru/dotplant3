@@ -1,5 +1,8 @@
 <?php
-
+$siteConfig = __DIR__ . '/../../modules/site/config/languages/Language.php';
+if (file_exists($siteConfig)) {
+    return include($siteConfig);
+}
 return [
     1 => [
         'id' => 1,
@@ -8,10 +11,13 @@ return [
         'iso_639_1' => 'en',
         'iso_639_2t' => 'eng',
         'hreflang' => 'en',
-        'domain' => 'dotplant3.dev',
-        'folder' => 'en',
+        'context_rules' => [
+            1 => [
+                'domain' => 'dotplant3.dev',
+                'folder' => 'en',
+            ]
+        ],
         'yii_language' => 'en-US',
-        'context_id' => 1,
         'sort_order' => 1,
     ],
     2 => [
@@ -21,10 +27,13 @@ return [
         'iso_639_1' => 'ru',
         'iso_639_2t' => 'rus',
         'hreflang' => 'ru',
-        'domain' => 'dotplant3.dev',
-        'folder' => 'ru',
+        'context_rules' => [
+            1 => [
+                'domain' => 'dotplant3.dev',
+                'folder' => 'ru',
+            ]
+        ],
         'yii_language' => 'ru',
-        'context_id' => 1,
         'sort_order' => 2,
     ],
 ];
