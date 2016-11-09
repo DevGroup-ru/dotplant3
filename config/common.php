@@ -1,5 +1,7 @@
 <?php
 
+use app\components\CachedDbManager;
+
 $config = [
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
@@ -71,8 +73,7 @@ $config = [
             ],
         ],
         'authManager' => [
-            'class' => yii\rbac\DbManager::class,
-            'cache' => 'cache',
+            'class' => CachedDbManager::class,
         ],
     ],
     'modules' => [
