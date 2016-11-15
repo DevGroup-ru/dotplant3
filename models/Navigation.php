@@ -177,11 +177,12 @@ class Navigation extends \yii\db\ActiveRecord
     {
         foreach ($items as $index => &$item) {
             if (empty($item['rbac_check']) === false) {
-                if ($visibleOnly) {
+                $hasAccess = Yii::$app->user->can($item['rbac_check']);
+                if ($visibleOnly && !$hasAccess) {
                     unset($items[$index]);
                     continue;
                 }
-                $item['visible'] = Yii::$app->user->can($item['rbac_check']);
+                $item['visible'] = $hasAccess;
                 unset($item['rbac_check']);
                 break;
             }
