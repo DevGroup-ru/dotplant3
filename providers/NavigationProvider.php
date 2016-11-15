@@ -32,6 +32,11 @@ class NavigationProvider extends DataEntityProvider
     public $blockKey = 'menuItems';
 
     /**
+     * @var bool whether to get only visible menu items
+     */
+    public $visibleOnly = true;
+
+    /**
      * @inheritdoc
      */
     public function pack()
@@ -50,7 +55,7 @@ class NavigationProvider extends DataEntityProvider
         $this->entities = [
             $this->regionKey => [
                 $this->materialKey => [
-                    $this->blockKey => Navigation::getNavigation($this->parentId),
+                    $this->blockKey => Navigation::getNavigation($this->parentId, $this->visibleOnly),
                 ]
             ]
         ];

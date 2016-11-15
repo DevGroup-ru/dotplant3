@@ -141,9 +141,11 @@ class Navigation extends \yii\db\ActiveRecord
     }
 
     /**
+     * @param int $parent_id
+     * @param bool $visibleOnly
      * @return array
      */
-    public static function getNavigation($parent_id = 0)
+    public static function getNavigation($parent_id = 0, $visibleOnly = false)
     {
         $cacheKey = 'Navigation:menuItems:' . implode(
                 ':',
@@ -163,17 +165,22 @@ class Navigation extends \yii\db\ActiveRecord
                 new TagDependency(['tags' => self::commonTag()])
             );
         }
-        self::checkPermissions($items);
+        self::checkPermissions($items, $visibleOnly);
         return $items;
     }
 
     /**
      * @param array $items
+     * @param bool $visibleOnly
      */
-    private static function checkPermissions(&$items)
+    private static function checkPermissions(&$items, $visibleOnly = false)
     {
-        foreach ($items as &$item) {
+        foreach ($items as $index => &$item) {
             if (empty($item['rbac_check']) === false) {
+                if ($visibleOnly) {
+                    unset($items[$index]);
+                    continue;
+                }
                 $item['visible'] = Yii::$app->user->can($item['rbac_check']);
                 unset($item['rbac_check']);
                 break;
