@@ -1,0 +1,123 @@
+{
+  "repositories": [
+    {
+      "type": "path",
+      "url": "../../yii2-admin-utils/"
+    },
+    {
+      "type": "path",
+      "url": "../../yii2-ckeditor/"
+    },
+    {
+      "type": "path",
+      "url": "../../yii2-data-structure-tools/"
+    },
+    {
+      "type": "path",
+      "url": "../../yii2-deferred-tasks/"
+    },
+    {
+      "type": "path",
+      "url": "../../yii2-elasticsearch/"
+    },
+    {
+      "type": "path",
+      "url": "../../yii2-entity/"
+    },
+    {
+      "type": "path",
+      "url": "../../yii2-events-system/"
+    },
+    {
+      "type": "path",
+      "url": "../../yii2-extensions-manager/"
+    },
+    {
+      "type": "path",
+      "url": "../../yii2-frontend-utils/"
+    },
+    {
+      "type": "path",
+      "url": "../../yii2-http2-server-push/"
+    },
+    {
+      "type": "path",
+      "url": "../../yii2-intent-analytics/"
+    },
+    {
+      "type": "path",
+      "url": "../../yii2-jsoneditor/"
+    },
+    {
+      "type": "path",
+      "url": "../../yii2-jstree-widget/"
+    },
+    {
+      "type": "path",
+      "url": "../../yii2-measure/"
+    },
+    {
+      "type": "path",
+      "url": "../../yii2-media-storage/"
+    },
+    {
+      "type": "path",
+      "url": "../../yii2-multilingual/"
+    },
+    {
+      "type": "path",
+      "url": "../../yii2-polyglot/"
+    },
+    {
+      "type": "path",
+      "url": "../../yii2-tag-dependency-helper/"
+    },
+    {
+      "type": "path",
+      "url": "../../yii2-users-module/"
+    },
+    {
+      "type": "path",
+      "url": "../../bh-php/"
+    },
+    {
+      "type": "path",
+      "url": "../../dotplant-content/"
+    },
+    {
+      "type": "path",
+      "url": "../../dotplant-currencies/"
+    },
+    {
+      "type": "path",
+      "url": "../../dotplant-emails/"
+    },
+    {
+      "type": "path",
+      "url": "../../dotplant-entity-structure/"
+    },
+    {
+      "type": "path",
+      "url": "../../dotplant-store/"
+    },
+    {
+      "type": "path",
+      "url": "../../monster/"
+    },
+    {
+      "type": "path",
+      "url": "../../dotplant/"
+    },
+    {
+      "type": "path",
+      "url": "../../dotplant-dev/"
+    },
+    {
+      "type": "path",
+      "url": "../../dotplant-store-bookmarks/"
+    }
+  ],
+  "require": {
+    "devgroup/yii2-deferred-tasks": "dev-master"
+  }
+}

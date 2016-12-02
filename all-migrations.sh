@@ -1,0 +1,20 @@
+#!/bin/bash
+./yii migrate --migrationPath=@app/migrations
+./yii migrate --migrationPath=@app/modules/site/migrations
+./yii migrate --migrationPath=@DevGroup/ExtensionsManager/migrations
+./yii migrate --migrationPath=@DevGroup/Measure/migrations
+./yii migrate --migrationPath=@DevGroup/Multilingual/migrations
+./yii migrate --migrationPath=@DotPlant/EntityStructure/migrations
+./yii migrate --migrationPath=@DotPlant/Store/migrations
+./yii migrate --migrationPath=@vendor/devgroup/yii2-data-structure-tools/src/migrations
+./yii migrate --migrationPath=@vendor/devgroup/yii2-deferred-tasks/src/migrations
+./yii migrate --migrationPath=@vendor/devgroup/yii2-events-system/src/migrations
+./yii migrate --migrationPath=@vendor/devgroup/yii2-intent-analytics/src/migrations/
+./yii migrate --migrationPath=@vendor/devgroup/yii2-media-storage/src/migrations
+./yii migrate --migrationPath=@vendor/devgroup/yii2-users-module/src/migrations
+./yii migrate --migrationPath=@vendor/dotplant/content/src/migrations
+./yii migrate --migrationPath=@vendor/dotplant/emails/src/migrations
+./yii migrate --migrationPath=@vendor/dotplant/entity-structure/src/migrations
+./yii migrate --migrationPath=@vendor/dotplant/monster/src/migrations/
+./yii migrate --migrationPath=@vendor/dotplant/store/src/migrations
+./yii migrate --migrationPath=@yii/rbac/migrations

@@ -51,6 +51,13 @@
       "asset-installer-paths": {
         "npm-asset-library": "vendor/npm",
         "bower-asset-library": "vendor/bower"
+      },
+      "merge-plugin": {
+        "include": [
+          "../dev.composer.json"
+        ],
+        "merge-extra": true,
+        "merge-extra-deep": true
       }
     },
     "provide": {
