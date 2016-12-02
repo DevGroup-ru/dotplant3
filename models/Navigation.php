@@ -166,6 +166,7 @@ class Navigation extends \yii\db\ActiveRecord
             );
         }
         self::checkPermissions($items, $visibleOnly);
+
         return $items;
     }
 
@@ -184,12 +185,12 @@ class Navigation extends \yii\db\ActiveRecord
                 }
                 $item['visible'] = $hasAccess;
                 unset($item['rbac_check']);
-                break;
             }
             if (empty($item['items']) === false) {
                 self::checkPermissions($item['items']);
             }
         }
+        unset($item);
     }
 
     /**
