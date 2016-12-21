@@ -43,6 +43,22 @@ class UniversalController extends FrontendController
                     ],
                 ],
             ],
+            'show-with-properties' => [
+                'class' => SuperAction::class,
+                'actions' => [
+                    [
+                        'class' => FillEntities::class,
+                        'entitiesMapping' => [
+                            'DotPlant\EntityStructure\models\BaseStructure' => 'page',
+                        ],
+                    ],
+                    [
+                        'class' => MainEntity::class,
+                        'mainEntityKey' => 'page',
+                        'defaultTemplateKey' => 'example',
+                    ],
+                ],
+            ],
         ];
     }
 }
