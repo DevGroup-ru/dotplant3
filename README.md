@@ -3,6 +3,11 @@ DotPlant3 CMS
 
 Next generation of dotPlant CMS.
 
+**WARNING** :fire: dotplant3 is not production ready yet:exclamation: Developers will not support you until the release is made. 
+
+It contains lots of bugs, unimplemented features and other very bad things.
+We don't know the exact release date for now.  ¯\\_(ツ)_/¯
+
 Installation
 ------------
 
