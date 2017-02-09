@@ -1,6 +1,8 @@
 <?php
 
 use app\components\CachedDbManager;
+use DevGroup\EntitySearch\components\Search;
+use DevGroup\FlexIntegration\FlexIntegrationModule;
 
 $config = [
     'aliases' => [
@@ -75,6 +77,9 @@ $config = [
         'authManager' => [
             'class' => CachedDbManager::class,
         ],
+        'search' => [
+            'class' => Search::class,
+        ],
     ],
     'modules' => [
         'properties' => [
@@ -106,7 +111,10 @@ $config = [
         'measure' => [
             'class' => DevGroup\Measure\Module::class,
             'layout' => '@app/views/layouts/admin',
-        ]
+        ],
+        'flex' => [
+            'class' => FlexIntegrationModule::class,
+        ],
     ],
     'params' => require(__DIR__ . '/params.php'),
 ];
